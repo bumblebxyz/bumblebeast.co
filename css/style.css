@@ -42,6 +42,16 @@ h1, h2, h3, h4, h5, h6
 	background-color: rgba(0,0,0,0.41);
 }
 
+hr {border-top: 1px solid #000; width:50%;}
+
+.box1{background: rgb(255, 255, 255, 1);}
+.box2{background: rgb(255, 255, 255, 1);}
+.box3{background: rgb(255, 255, 255, 1);;}
+
+.contactinfo
+{
+    color: #FFD34E;
+}
 .img_description {
     font-weight: bold;
     text-align: center;
@@ -54,11 +64,11 @@ h1, h2, h3, h4, h5, h6
 {
 	padding: 0px;
 	height: inherit;
-	font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 44px;
 }
 .navbar-default .navbar-brand {
     color: #fff;
-	font-size: 44px;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -134,7 +144,6 @@ h1, h2, h3, h4, h5, h6
     background: #000000;
     display: inline-block;
     text-transform: uppercase;
-    padding: 5px 0px 5px 15px;
     font-weight: bold;
     border-radius: 1px;
     letter-spacing: 1px;
@@ -151,17 +160,17 @@ h1, h2, h3, h4, h5, h6
 }
 
 .btn-submit:hover, .blog:hover {
-    background: #000000;
-    color: #000000;
+    color: #FFD34E;
 }
 
 .btn-submit {
     font-size: 18px;
+    padding: 5px 10px 5px 10px;
 }
 
 .blog {
     font-size: 27px;
-
+    padding: 5px 0px 5px 15px;
 }
 
 #smaller {
@@ -421,6 +430,11 @@ a, a:hover
     color: #ff4500;
 }
 
+#lilbee 
+{
+    position:relative;
+    top:-5px;
+
 .link-dec, .link-dec:hover{
     color: #000;
 }
@@ -431,6 +445,15 @@ a, a:hover
     }
 }
 @media (min-width: 20px) and (max-width: 450px){
+    .blog{
+        background: #FFFFFF;
+        border-radius: 0px;
+        letter-spacing: 10px;
+        color: #000000;
+        margin-top: 0px;
+        border: none;
+        padding: 10px 0px 10px 10%;
+    }
     .main-header{
         background: url(../img/backgroundonly.png) no-repeat;
         background-size: cover;
@@ -453,6 +476,18 @@ a, a:hover
         background-color: rgba(255, 255, 255, 1);
         color: #FFD34E;
     }
+
+    .navbar-brand
+    {
+        font-size: 28px;
+        margin-top: 6px;
+    }
+    #lilbee 
+    {
+        position:relative;
+        margin-top:6px"
+    }
+
     .top-title{
         font-size: 15px;
         margin-top: 50%;
@@ -478,6 +513,7 @@ a, a:hover
     .cta-txt h3{
         font-size: 28px;
     }
+
     body{
         font-size: 14px;
     }
