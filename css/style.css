@@ -1,4 +1,8 @@
-
+#emails:hover {
+    color: #FFD34E;
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
 body {
 	line-height: 1.5;
 	font-family: 'Open Sans', sans-serif;
@@ -27,6 +31,10 @@ h1, h2, h3, h4, h5, h6
 {
 	font-family: 'Lato', sans-serif;
 }
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
 /**media Queries**/
 .navbar-default {
     background-color: rgba(0,0,0,0.2);
@@ -42,11 +50,19 @@ h1, h2, h3, h4, h5, h6
 	background-color: rgba(0,0,0,0.41);
 }
 
-hr {border-top: 1px solid #000; width:50%;}
+hr {border-top: 5px solid #000; width:50%;}
 
-.box1{background: rgb(255, 255, 255, 1);}
-.box2{background: rgb(255, 255, 255, 1);}
-.box3{background: rgb(255, 255, 255, 1);;}
+.box1, .box2, .box3{
+    background: rgb(255, 255, 255, 1);
+    color: #000000;
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+    -ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2); /* Safari */
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in-out;
+}
 
 .contactinfo
 {
@@ -100,6 +116,13 @@ hr {border-top: 1px solid #000; width:50%;}
 .demo {
     text-decoration: none;
     margin-top: 45%;
+    color: #FFD34E;
+}
+.demo:hover {
+    -ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2); /* Safari */
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in-out;
 }
 
 .wrapper
@@ -306,7 +329,7 @@ h3.txt-tl {
 }
 #contact
 {
-	background-color: #f8f8f8;
+	background-color: #ffffff;
 }
 
 .validation {
@@ -352,10 +375,12 @@ h3.txt-tl {
 	color: #000;
 	background-color: #FFD34E;
 }
+
 a, a:hover
 {
 	color: #FFD34E;
 }
+
 .cont-title
 {
 	font-size: 24px;
@@ -479,7 +504,7 @@ a, a:hover
 
     .navbar-brand
     {
-        font-size: 28px;
+        font-size: 24px;
         margin-top: 6px;
     }
     #lilbee 
