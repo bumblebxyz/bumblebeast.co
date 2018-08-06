@@ -39,12 +39,25 @@ a, a:hover, a:visited {
 .navbar-default {
     background-color: rgba(0,0,0,0.2);
 }
+/**
 .main-header
 {
 	background: url(../img/background.png) no-repeat;
 	background-size: cover;
-	min-height: 600px;
+    min-height: 600px;
+    
 }
+**/
+.main-header{
+    background: url(../img/backgroundonly.png) no-repeat bottom center scroll;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}  
 .bg-color
 {
 	background-color: rgba(0,0,0,0.41);
@@ -468,6 +481,7 @@ a, a:hover
     .section-title{
         margin-bottom: 15px;
     }
+    
 }
 @media (min-width: 20px) and (max-width: 450px){
     .blog{
@@ -480,9 +494,14 @@ a, a:hover
         padding: 10px 0px 10px 10%;
     }
     .main-header{
-        background: url(../img/backgroundonly.png) no-repeat;
+        background: url(../img/backgroundonly.png) no-repeat bottom center scroll;
+        width: 100%;
+        height: auto;
+        padding: 100px 0;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
         background-size: cover;
-        min-height: 600px;
+        -o-background-size: cover;
     }    
     .navbar-toggle:hover, .navbar-toggle{
 	background-color: #000;
