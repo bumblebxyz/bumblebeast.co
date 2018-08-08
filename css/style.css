@@ -1,3 +1,98 @@
+/* Custom Styles for Phone-Sized Devices */
+@media (min-width: 20px) and (max-width: 450px){
+    /* Make blog button stand out */
+    .blog{
+        background: #FFFFFF;
+        border-radius: 0px;
+        letter-spacing: 10px;
+        color: #000000;
+        margin-top: 0px;
+        border: none;
+        padding: 10px 0px 10px 10%;
+    }
+    /* Load appropriate sized background picture */
+    body .main-header{
+        background: url(../img/bmobile.png) no-repeat bottom center scroll;
+        width: 100%;
+        height: auto;
+        padding: 100px 0;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }  
+    .navbar-toggle:hover, .navbar-toggle{
+	    background-color: #000;
+        color: #FFFFFF;
+    }
+    .navbar-toggle{
+        margin-top: 0px;
+    }
+    .navbar-default .navbar-nav > li > a{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #000;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #FFD34E;
+    }
+    /* Size title to fit mobile screen and align with hamburger */
+    body .navbar-brand
+    {
+        font-size: 1.8em;
+        padding: 10px 0px 0px 0px;
+    }
+    /* Align logo picture with title */
+    #lilbee 
+    {
+        position:relative;
+        margin-top:6px;
+    }
+    /* Align title on mobile */
+    .top-title{
+        font-size: 15px;
+        margin-top: -20%;
+    }
+    /* Align demo on mobile */
+    .demo {
+        margin-top: 100%;
+    }
+    /* Resize fonts for mobile screens */
+    .title{
+        font-size: 50px;
+    }
+    .sub-title{
+        font-size: 24px;
+    }
+    .cta-txt h3{
+        font-size: 28px;
+    }
+    body{
+        font-size: 14px;
+    }
+    h3.txt-tl{
+        font-size: 20px;
+    }
+    /* Adjust paddings for mobile */
+    .padding-right-zero{
+        padding-right: 15px;
+    }
+    .section-title{
+        margin-bottom: 15px;
+    }
+    .footer-copyright {
+        text-align: center;
+    }
+}
+/* Custom Styles for Tablet Sized Devices */
+@media (min-width: 451px) and (max-width: 900px){
+    .section-title{
+        margin-bottom: 15px;
+    }
+    
+}
+/*Make contact divs animate a bit */
 #emails:hover {
     color: #FFD34E;
     font-size: 16px;
@@ -35,57 +130,31 @@ h1, h2, h3, h4, h5, h6
 a, a:hover, a:visited {
     text-decoration: none;
 }
-/**media Queries**/
-.navbar-default {
-    background-color: rgba(0,0,0,0.2);
-}
-/**
+/* Set background for the main header */
 .main-header
 {
 	background: url(../img/background.png) no-repeat;
-	background-size: cover;
-    min-height: 600px;
-    
-}
-**/
-.main-header{
-    background: url(../img/backgroundonly.png) no-repeat bottom center scroll;
+    background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: auto;
-    padding: 100px 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}  
+}
 .bg-color
 {
 	background-color: rgba(0,0,0,0.41);
 }
-
-hr {border-top: 5px solid #000; width:50%;}
-
-.box1, .box2, .box3{
-    background: rgb(255, 255, 255, 1);
-    color: #000000;
-}
-
-.box1:hover, .box2:hover, .box3:hover {
-    -ms-transform: scale(1.2, 1.2); /* IE 9 */
-    -webkit-transform: scale(1.2, 1.2); /* Safari */
-    transform: scale(1.2, 1.2);
-    transition: all 0.4s ease-in-out;
-}
-
-.contactinfo
-{
-    color: #FFD34E;
+hr {
+    border-top: 5px solid #000; width:50%;
 }
 .img_description {
     font-weight: bold;
     text-align: center;
 }
-
+/*Styles for navbar */
+/*** ***/
+.navbar-default {
+    background-color: rgba(0,0,0,0.2);
+}
 .nav > li > a {
     padding: 0px;
 }
@@ -121,11 +190,17 @@ hr {border-top: 5px solid #000; width:50%;}
     padding: 40px 0;
     transition: all 0.5s;
 }
-
 .top-nav-collapse {
     background: rgba(0,0,0,1);
     padding: 25px 0;
 }
+/* Align navbar brand logo */
+#lilbee {
+    position:relative;
+    top:-5px;
+}
+/*** ***/
+
 .demo {
     text-decoration: none;
     margin-top: 45%;
@@ -137,7 +212,6 @@ hr {border-top: 5px solid #000; width:50%;}
     transform: scale(1.2, 1.2);
     transition: all 0.4s ease-in-out;
 }
-
 .wrapper
 {
 	padding: 90px 0px 130px;
@@ -416,6 +490,10 @@ a, a:hover
     line-height: 32px;
     color: #000;
 }
+.contactinfo
+{
+    color: #FFD34E;
+}
 .contact-icon-container {
     position: absolute;
     top: -38px;
@@ -429,7 +507,9 @@ a, a:hover
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
 }
-
+.link-dec, .link-dec:hover{
+    color: #000;
+}
 #map
 {
     height: 50%;
@@ -446,6 +526,8 @@ a, a:hover
     text-align: left;
     display: inline-block;
 }
+/* Styles for social icons */
+/*** ***/
 .footer-social
 {
 	padding-left: 36.5%;
@@ -467,103 +549,16 @@ a, a:hover
 #reddit {
     color: #ff4500;
 }
-
-#lilbee 
-{
-    position:relative;
-    top:-5px;
-
-.link-dec, .link-dec:hover{
-    color: #000;
+/*** ***/
+.box1, .box2, .box3{
+    background: rgb(255, 255, 255, 1);
+    color: #000000;
 }
-/****/
-@media (min-width: 451px) and (max-width: 900px){
-    .section-title{
-        margin-bottom: 15px;
-    }
-    
+
+.box1:hover, .box2:hover, .box3:hover {
+    -ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2); /* Safari */
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in-out;
 }
-@media (min-width: 20px) and (max-width: 450px){
-    .blog{
-        background: #FFFFFF;
-        border-radius: 0px;
-        letter-spacing: 10px;
-        color: #000000;
-        margin-top: 0px;
-        border: none;
-        padding: 10px 0px 10px 10%;
-    }
-    .main-header{
-        background: url(../img/backgroundonly.png) no-repeat bottom center scroll;
-        width: 100%;
-        height: auto;
-        padding: 100px 0;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }    
-    .navbar-toggle:hover, .navbar-toggle{
-	background-color: #000;
-        color: #fff;
-    }
-    .navbar-toggle{
-        margin-top: 0px;
-    }
-
-    .navbar-default .navbar-nav > li > a{
-        text-align: center;
-        background-color: rgba(255, 255, 255, 1);
-        color: #000;
-    }
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-        background-color: rgba(255, 255, 255, 1);
-        color: #FFD34E;
-    }
-
-    .navbar-brand
-    {
-        font-size: 24px;
-        margin-top: 6px;
-    }
-    #lilbee 
-    {
-        position:relative;
-        margin-top:6px"
-    }
-
-    .top-title{
-        font-size: 15px;
-        margin-top: 50%;
-    }
-    .demo {
-        margin-top: 15%;
-    }
-    .title{
-        font-size: 50px;
-    }
-    .sub-title{
-        font-size: 24px;
-    }
-    .footer-copyright {
-    text-align: center;
-    }
-    .padding-right-zero{
-        padding-right: 15px;
-    }
-    .section-title{
-        margin-bottom: 15px;
-    }
-    .cta-txt h3{
-        font-size: 28px;
-    }
-
-    body{
-        font-size: 14px;
-    }
-    h3.txt-tl{
-        font-size: 20px;
-    }
-}
-/****/
 
