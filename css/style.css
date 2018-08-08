@@ -1,6 +1,6 @@
 /* Custom Styles for Phone-Sized Devices */
 @media (min-width: 20px) and (max-width: 450px){
-    /* Make blog button stand out */
+    /* Make blog button stand out in collapsed nav */
     .blog{
         background: #FFFFFF;
         border-radius: 0px;
@@ -11,6 +11,7 @@
         padding: 10px 0px 10px 10%;
     }
     /* Load appropriate sized background picture */
+    /* TO-DO: make better background */
     body .main-header{
         background: url(../img/bmobile.png) no-repeat bottom center scroll;
         width: 100%;
@@ -92,7 +93,7 @@
     }
     
 }
-/*Make contact divs animate a bit */
+/*Make emails animate a bit */
 #emails:hover {
     color: #FFD34E;
     font-size: 16px;
@@ -551,14 +552,19 @@ a, a:hover
 }
 /*** ***/
 .box1, .box2, .box3{
+    position: relative;
     background: rgb(255, 255, 255, 1);
     color: #000000;
+    box-shadow: inset 0 0 10px #FFD34E, inset 0 0 20px #FFD34E;
+    z-index: 1;
 }
 
 .box1:hover, .box2:hover, .box3:hover {
+    position: relative;
     -ms-transform: scale(1.2, 1.2); /* IE 9 */
     -webkit-transform: scale(1.2, 1.2); /* Safari */
     transform: scale(1.2, 1.2);
     transition: all 0.4s ease-in-out;
+    z-index: 2;
 }
 
