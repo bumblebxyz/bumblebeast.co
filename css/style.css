@@ -90,8 +90,7 @@
 @media (min-width: 451px) and (max-width: 900px){
     .section-title{
         margin-bottom: 15px;
-    }
-    
+    }  
 }
 /*Make emails animate a bit */
 #emails:hover {
@@ -130,6 +129,7 @@ h1, h2, h3, h4, h5, h6
 
 a, a:hover, a:visited {
     text-decoration: none;
+    color: #FFD34E;
 }
 /* Set background for the main header */
 .main-header
@@ -142,7 +142,7 @@ a, a:hover, a:visited {
 }
 .bg-color
 {
-	background-color: rgba(0,0,0,0.41);
+	background-color: rgba(0,0,0,0.2);
 }
 hr {
     border-top: 5px solid #000; width:50%;
@@ -174,8 +174,6 @@ hr {
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #FFD34E;
-    background-color: rgba(0,0,0,0.2);
-    text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
@@ -184,7 +182,11 @@ hr {
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
 {
-	color: #FFD34E;
+    color: #FFD34E;
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-in-out;
 }
 
 .navbar-fixed-top {
@@ -272,6 +274,9 @@ hr {
 
 .btn-submit:hover, .blog:hover {
     color: #FFD34E;
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    transform: scale(1.1, 1.1);
 }
 
 .btn-submit {
@@ -525,18 +530,19 @@ a, a:hover
     color: #fff;
     line-height: 32px;
     text-align: left;
-    display: inline-block;
+    display: inline-flex;
 }
 /* Styles for social icons */
 /*** ***/
 .footer-social
 {
-	padding-left: 36.5%;
-    display: inline-block;
+    align-items: center;
+    display: inline-flex;
 }
-.footer-social a {
-    font-size: 18px;
-    color: #666;
+
+.footer-tos {
+    align-items: right;
+    display: inline-flex;
 }
 
 #facebook {
