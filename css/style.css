@@ -487,7 +487,7 @@ a, a:hover
     color: #ff4500;
 }
 /*** ***/
-.box1, .box2, .box3 {
+.box {
     position: relative;
     background: rgb(255, 255, 255, 1);
     color: #000000;
@@ -495,7 +495,7 @@ a, a:hover
     z-index: 1;
 }
 
-.box1:hover, .box2:hover, .box3:hover {
+.box:hover {
     position: relative;
     -ms-transform: scale(1.2, 1.2); /* IE 9 */
     -webkit-transform: scale(1.2, 1.2); /* Safari */
