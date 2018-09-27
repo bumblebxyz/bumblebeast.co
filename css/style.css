@@ -1,97 +1,4 @@
-/* Custom Styles for Phone-Sized Devices */
-@media (min-width: 20px) and (max-width: 450px){
-    /* Make blog button stand out in collapsed nav */
-    .blog{
-        background: #FFFFFF;
-        border-radius: 0px;
-        letter-spacing: 10px;
-        color: #000000;
-        margin-top: 0px;
-        border: none;
-        padding: 10px 0px 10px 10%;
-    }
-    /* Load appropriate sized background picture */
-    /* TO-DO: make better background */
-    body .main-header{
-        background: url(../img/bmobile.png) no-repeat bottom center scroll;
-        width: 100%;
-        height: auto;
-        padding: 100px 0;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }  
-    .navbar-toggle:hover, .navbar-toggle{
-	    background-color: #000;
-        color: #FFFFFF;
-    }
-    .navbar-toggle{
-        margin-top: 0px;
-    }
-    .navbar-default .navbar-nav > li > a{
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #000;
-    }
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #FFD34E;
-    }
-    /* Size title to fit mobile screen and align with hamburger */
-    body .navbar-brand
-    {
-        font-size: 1.8em;
-        padding: 10px 0px 0px 0px;
-    }
-    /* Align logo picture with title */
-    #lilbee 
-    {
-        position:relative;
-        margin-top:6px;
-    }
-    /* Align title on mobile */
-    .top-title{
-        font-size: 15px;
-        margin-top: -20%;
-    }
-    /* Align demo on mobile */
-    .demo {
-        margin-top: 100%;
-    }
-    /* Resize fonts for mobile screens */
-    .title{
-        font-size: 50px;
-    }
-    .sub-title{
-        font-size: 24px;
-    }
-    .cta-txt h3{
-        font-size: 28px;
-    }
-    body{
-        font-size: 14px;
-    }
-    h3.txt-tl{
-        font-size: 20px;
-    }
-    /* Adjust paddings for mobile */
-    .padding-right-zero{
-        padding-right: 15px;
-    }
-    .section-title{
-        margin-bottom: 15px;
-    }
-    .footer-copyright {
-        text-align: center;
-    }
-}
-/* Custom Styles for Tablet Sized Devices */
-@media (min-width: 451px) and (max-width: 900px){
-    .section-title{
-        margin-bottom: 15px;
-    }  
-}
+
 /*Make emails animate a bit */
 #emails:hover {
     color: #FFD34E;
@@ -134,9 +41,6 @@ a, a:hover, a:visited {
 /* Set background for the main header */
 .main-header
 {
-	background: url(../img/background.png) no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     width: 100%;
     height: auto;
 }
@@ -164,7 +68,7 @@ hr {
 	padding: 0px;
 	height: inherit;
     font-family: 'Lato', sans-serif;
-    font-size: 44px;
+    font-size: 30px;
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -177,7 +81,7 @@ hr {
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
-    padding: 0px 2 0px;
+    padding: 0px 5px 0px;
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
@@ -206,8 +110,20 @@ hr {
 
 .demo {
     text-decoration: none;
-    margin-top: 45%;
-    color: #FFD34E;
+    margin-top: 5%;
+}
+.videowrapper {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .demo:hover {
     -ms-transform: scale(1.2, 1.2); /* IE 9 */
@@ -215,12 +131,20 @@ hr {
     transform: scale(1.2, 1.2);
     transition: all 0.4s ease-in-out;
 }
-.wrapper
-{
+
+.blog2 {
+    text-decoration: none;
+}
+.blog2:hover {
+    -ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2); /* Safari */
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in-out;
+}
+.wrapper {
 	padding: 90px 0px 130px;
 }
-.top-title
-{
+.top-title {
 	z-index: 5;
 	font-size: 27px;
 	font-weight: 700;
@@ -231,8 +155,7 @@ hr {
 	text-transform: uppercase;
         margin-top: 3%;
 }
-.sub-title
-{
+.sub-title {
 	font-size: 50px;
 	font-weight: 700;
 	color: #fff;
@@ -241,8 +164,7 @@ hr {
 	opacity: 1;
 	text-transform: uppercase;
 }
-.title
-{
+.title {
 	font-size: 123px;
 	font-weight: 700;
 	color: #fff;
@@ -252,8 +174,19 @@ hr {
 	text-transform: uppercase;
 	padding: 25px 0px;
 }
-.btn-submit, .blog
-{
+
+.btn-grad {
+    border-radius: 5px;
+    padding: 2px 2px 2px 2px;
+    background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D 51%, #00C9FF 100%);
+    display: inline-block;
+    text-align: center;
+}
+.btn-grad:hover { 
+    background-position: right center; 
+}
+    
+.btn-submit, .blog {
     background: #000000;
     display: inline-block;
     text-transform: uppercase;
@@ -301,13 +234,11 @@ hr {
     padding-top: 3.5%;
 }
 /****/
-#cta-1
-{
+#cta-1 {
 	padding: 40px 0px;
 }
 
-.cta-info
-{
+.cta-info {
 	border: 5px solid #FFD34E;
 	padding: 40px 0px;
 }
@@ -363,8 +294,7 @@ p
     margin-top: 14px;
     margin-bottom: 20px;
 }
-.icon i
-{
+.icon i {
 	font-size: 35px;
 }
 .icon-text {
@@ -557,7 +487,7 @@ a, a:hover
     color: #ff4500;
 }
 /*** ***/
-.box1, .box2, .box3{
+.box1, .box2, .box3 {
     position: relative;
     background: rgb(255, 255, 255, 1);
     color: #000000;
@@ -572,5 +502,93 @@ a, a:hover
     transform: scale(1.2, 1.2);
     transition: all 0.4s ease-in-out;
     z-index: 2;
+}
+
+/* Custom Styles for Tablet Sized Devices */
+@media (min-width: 451px) and (max-width: 1000px) {
+    .section-title {
+        margin-bottom: 15px;
+    }  
+}
+
+/* Custom Styles for Phone-Sized Devices */
+@media (min-width: 20px) and (max-width: 450px){
+    /* Make blog button stand out in collapsed nav */
+    .blog {
+        background: #FFFFFF;
+        border-radius: 0px;
+        letter-spacing: 10px;
+        color: #000000;
+        margin-top: 0px;
+        border: none;
+        padding: 10px 0px 10px 10%;
+    }
+    /* Load appropriate sized background picture */
+    /* TO-DO: make better background */
+    body .main-header {
+        width: 100%;
+        height: auto;
+    }  
+    .navbar-toggle:hover, .navbar-toggle {
+	    background-color: #000;
+        color: #FFFFFF;
+    }
+    .navbar-toggle{
+        margin-top: 0px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFFFFF;
+        height: 50px;
+        padding-top: 12px;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #FFD34E;
+    }
+    /* Size title to fit mobile screen and align with hamburger */
+    .navbar-brand
+    {
+        font-size: 1.5em;
+        padding: 5px 0px 0px 0px;
+    }
+    /* Align logo picture with title */
+    #lilbee 
+    {
+        position:relative;
+        margin-top:6px;
+    }
+    /* Align title on mobile */
+    .top-title {
+        font-size: 15px;
+        margin-top: -20%;
+    }
+    /* Resize fonts for mobile screens */
+    .title {
+        font-size: 50px;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    .cta-txt h3 {
+        font-size: 28px;
+    }
+    body {
+        font-size: 14px;
+    }
+    h3.txt-tl {
+        font-size: 20px;
+    }
+    /* Adjust paddings for mobile */
+    .padding-right-zero {
+        padding-right: 15px;
+    }
+    .section-title {
+        margin-bottom: 15px;
+    }
+    .footer-copyright {
+        text-align: center;
+    }
 }
 
