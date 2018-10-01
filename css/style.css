@@ -441,6 +441,11 @@ a, a:hover
 }
 .contactinfo
 {
+    color: #000000;
+}
+
+.contactinfo:hover
+{
     color: #FFD34E;
 }
 .contact-icon-container {
@@ -504,7 +509,6 @@ a, a:hover
     position: relative;
     background: rgb(255, 255, 255, 1);
     color: #000000;
-    box-shadow: inset 0 0 10px #FFD34E, inset 0 0 20px #FFD34E;
     z-index: 1;
 }
 
