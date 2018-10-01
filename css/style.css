@@ -94,7 +94,7 @@ hr {
 }
 
 .navbar-fixed-top {
-    padding: 40px 0;
+    padding: 25px 0;
     transition: all 0.5s;
 }
 .top-nav-collapse {
@@ -346,6 +346,19 @@ h3.txt-tl {
 	margin-bottom: 15px;
 
 }
+
+.img-responsive, .typeform-share {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-responsive:hover, .typeform-share:hover {
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-in-out;
+    z-index: 2 
+}
+    
 .padding-right-zero
 {
 	padding-right: 0px;
@@ -505,15 +518,21 @@ a, a:hover
 }
 
 /* Custom Styles for Tablet Sized Devices */
-@media (min-width: 451px) and (max-width: 1000px) {
+@media (min-width: 451px) and (max-width: 990px) {
     .section-title {
         margin-bottom: 15px;
     }  
+    .navbar-fixed-top {
+        padding: 15px 0;
+    }
 }
 
 /* Custom Styles for Phone-Sized Devices */
 @media (min-width: 20px) and (max-width: 450px){
     /* Make blog button stand out in collapsed nav */
+    .navbar-fixed-top {
+        padding: 17px 0;
+    }
     .blog {
         background: #FFFFFF;
         border-radius: 0px;
