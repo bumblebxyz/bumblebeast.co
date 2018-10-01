@@ -68,14 +68,14 @@
                         <!-- Right side nav, collapse into hamburger on mobile -->
                         <div class="collapse navbar-collapse navbar-right" id="mynavbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="#header">Home &nbsp; </a></li>
-                                <li><a href="#gallery">Gallery &nbsp;</a></li>
-                                <li><a href="#features">Features &nbsp;</a></li>
-                                <li class="hidden-s hidden-xs"><a href="#try-us">Try Us &nbsp;</a></li>
-                                <li class="visible-s visible-xs"><a href="#try">Try Us &nbsp;</a></li>
-                                <li><a href="#about">About Us &nbsp;</a></li>
-                                <li><a href="#contact">Contact &nbsp;</a></li>
-                                <li class="btn-grad"><a href="https://blog.bumblebeast.co" target="_blank"> Blog </a></li>
+                                <li class="spooky"><a href="#header">Home &nbsp; </a></li>
+                                <li class="spooky"><a href="#gallery">Gallery &nbsp;</a></li>
+                                <li class="spooky"><a href="#features">Features &nbsp;</a></li>
+                                <li class="hidden-s hidden-xs spooky"><a href="#try-us">Try Us &nbsp;</a></li>
+                                <li class="visible-s visible-xs spooky"><a href="#try">Try Us &nbsp;</a></li>
+                                <li class="spooky"><a href="#about">About Us &nbsp;</a></li>
+                                <li class="spooky"><a href="#contact">Contact &nbsp;</a></li>
+                                <li class="blog blog3"><a href="https://blog.bumblebeast.co" target="_blank"> Blog </a></li>
                                 <!-- <li> <button class="btn btn-submit" id="smaller" onclick="myFunct()"> Sign In </button> </li> -->
                             </ul>
                         </div>
@@ -274,7 +274,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 text-center" id="uploadit">
-                    <button class="btn btn-submit" id="CADbtn">Upload a CAD file</button>
+                    <button class="blog cad-btn" id="CADbtn">Upload a CAD file</button>
                     <input type="file" id="file" name="file" style="display: none;"/>
                 </div>
             </div>
@@ -292,7 +292,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 text-center">
-                    <button class="btn btn-submit" id="CADbtn">Upload a CAD file</button>
+                    <button class="blog cad-btn" id="CADbtn">Upload a CAD file</button>
                     <input type="file" id="file" name="file" style="display: none;"/>
                 </div>
             </div>
@@ -360,7 +360,7 @@
                     <a href="tel:+13105981128">
                         <br>
                         <i class="fa fa-phone fa-3x"></i>
-                        <h3 class="d-none d-lg-block d-xl-block">Phone</h3>
+                        <h3 class="d-none d-lg-block d-xl-block contactinfo">Phone</h3>
                         <p class="d-none d-lg-block d-xl-block contactinfo">+13105981128</p>
                         <br>
                     </a>
@@ -372,7 +372,7 @@
                     <a href="https://www.google.com/maps/place/9410+Owensmouth+Ave,+Chatsworth,+CA+91311/@34.2413792,-118.6036445,17z/data=!3m1!4b1!4m5!3m4!1s0x80c29c951e4f785b:0x7e90fd6a42ea0e12!8m2!3d34.2413792!4d-118.6014558">
                         <br>
                         <i class="fa fa-home fa-3x"></i>
-                        <h3 class="d-none d-lg-block d-xl-block">Address</h3>
+                        <h3 class="d-none d-lg-block d-xl-block contactinfo">Address</h3>
                         <p class="d-none d-lg-block d-xl-block contactinfo">9410 Owensmouth Avenue, Chatsworth, CA 91311</p>
                         <br>
                     </a>
@@ -384,7 +384,7 @@
                     <a href="mailto:info@bumblebeast.co">
                         <br>
                         <i class="fa fa-envelope fa-3x"></i>
-                        <h3 class="d-none d-lg-block d-xl-block">E-mail</h3>
+                        <h3 class="d-none d-lg-block d-xl-block contactinfo">E-mail</h3>
                         <p class="d-none d-lg-block d-xl-block contactinfo">info@bumblebeast.co</p>
                         <br>
                     </a>
@@ -402,8 +402,8 @@
                 <!-- Row for Social Icons (Facebook, Twitter, Reddit)-->
                 <div class="row text-center">
                     <!-- Facebook -->
-                    <div class="col-md-4 col-sm-6 pt-4">
-                        <a href="https://facebook.com/BeastBumble">
+                    <div class="box col-md-3 col-sm-3 pt-4">
+                        <a href="https://facebook.com/BeastBumble" target="_blank">
                             <br>
                             <i class="fa fa-facebook-square fa-5x" id="facebook"></i>
                             <h3 class="d-none d-lg-block d-xl-block" id="facebook">facebook</h3>
@@ -412,24 +412,32 @@
                     <!-- /Facebook -->
                     <!-- -->
                     <!-- Twitter -->
-                    <div class="col-md-4 col-sm-6 pt-4">
-                        <a href="https://twitter.com/BeastBumble">
+                    <div class="box col-md-3 col-sm-3 pt-4">
+                        <a href="https://twitter.com/BeastBumble" target="_blank">
                             <br>
                             <i class="fa fa-twitter-square fa-5x" id="twitter"></i>
                             <h3 class="d-none d-lg-block d-xl-block" id="twitter">twitter</h3>
                         </a>
                     </div>
                     <!-- /Twitter Box -->
-                    <!-- -->
-                    <!-- Reddit Box -->
-                    <div class="col-md-4 col-sm-6 pt-4">
-                        <a href="https://reddit.com/r/bumbleb">
+                    <!-- --Instagram Box -->
+                    <div class="box col-md-3 col-sm-3 pt-4">
+                        <a href="https://instagram.com/bumble__beast" target="_blank">
                             <br>
-                            <i class="fa fa-reddit-square fa-5x" id="reddit"></i>
-                            <h3 class="d-none d-lg-block d-xl-block" id="reddit" >reddit</h3>
+                            <i class="fa fa-instagram fa-5x" id="instagram"></i>
+                            <h3 class="d-none d-lg-block d-xl-block" id="instagram">instagram</h3>
                         </a>
                     </div>
-                    <!-- /Reddit Box -->
+                    <!-- /Instagram Box -->
+                    <!-- --Instagram Box -->
+                    <div class="box col-md-3 col-sm-3 pt-4">
+                            <a href="https://reddit.com/r/bumbleb" target="_blank">
+                                <br>
+                                <i class="fa fa-reddit-square fa-5x" id="reddit"></i>
+                                <h3 class="d-none d-lg-block d-xl-block" id="reddit">reddit</h3>
+                            </a>
+                        </div>
+                        <!-- /Instagram Box -->
                 </div>
             </div>
     </section>

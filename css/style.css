@@ -84,7 +84,7 @@ hr {
     padding: 0px 5px 0px;
     text-transform: uppercase;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+.navbar-default .navbar-nav .spooky:hover, .navbar-default .navbar-nav > .spooky:focus
 {
     color: #FFD34E;
     -ms-transform: scale(1.1, 1.1); /* IE 9 */
@@ -185,8 +185,37 @@ hr {
 .btn-grad:hover { 
     background-position: right center; 
 }
-    
-.btn-submit, .blog {
+   
+.blog {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FFD34E;
+    color: white;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+    height: 25px;
+    border-radius: 15px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.blog3 {
+    padding: 5px 5px 22px 5px;
+}
+
+.cad-btn {
+    padding: 0px 5px 50px 5px;
+}
+
+.btn-submit {
     background: #000000;
     display: inline-block;
     text-transform: uppercase;
@@ -205,7 +234,7 @@ hr {
     border: 2px solid  #FFD34E;
 }
 
-.btn-submit:hover, .blog:hover {
+.btn-submit:hover {
     color: #FFD34E;
     -ms-transform: scale(1.1, 1.1); /* IE 9 */
     -webkit-transform: scale(1.1, 1.1); /* Safari */
@@ -215,11 +244,6 @@ hr {
 .btn-submit {
     font-size: 18px;
     padding: 5px 10px 5px 10px;
-}
-
-.blog {
-    font-size: 27px;
-    padding: 5px 0px 5px 15px;
 }
 
 #smaller {
@@ -347,11 +371,11 @@ h3.txt-tl {
 
 }
 
-.img-responsive, .typeform-share {
+.img-responsive, .typeform-share, .blog {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-responsive:hover, .typeform-share:hover {
+.img-responsive:hover, .typeform-share:hover, .blog:hover {
     -ms-transform: scale(1.1, 1.1); /* IE 9 */
     -webkit-transform: scale(1.1, 1.1); /* Safari */
     transform: scale(1.1, 1.1);
@@ -410,11 +434,6 @@ h3.txt-tl {
 	border-radius: 0px;
 	color: #000;
 	background-color: #FFD34E;
-}
-
-a, a:hover
-{
-	color: #FFD34E;
 }
 
 .cont-title
@@ -504,6 +523,16 @@ a, a:hover
 #reddit {
     color: #ff4500;
 }
+#instagram {
+    color: #c32aa3;
+}
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 /*** ***/
 .box {
     position: relative;
@@ -566,7 +595,7 @@ a, a:hover
         height: 50px;
         padding-top: 12px;
     }
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    .spooky:hover {
         background-color: rgba(255, 255, 255, 0.2);
         color: #FFD34E;
     }
