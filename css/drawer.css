@@ -6,7 +6,7 @@ body {
 }
 #header {
   height: 56px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@ body {
   padding-left: 16px;
   padding-right: 8px;
   float: left;
-  color: white;
+  color: #FFD34E;
   font-size: 18px;
 }
 .container {
@@ -55,7 +55,7 @@ body {
   height: 100%;
   position: relative;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .drawer .content .header {
   height: 60px;
@@ -169,7 +169,7 @@ body {
   visibility: hidden;
 }
 .drawer {
-  max-width: 320px;
+  max-width: 260px;
   width: 75%;
   height: 100%;
   left: 0px;
@@ -225,7 +225,7 @@ body {
   left: 3px;
   right: 3px;
   height: 2px;
-  background: white;
+  background: #FFD34E;
   outline: 1px solid transparent;
 }
 .rx_icon .ic .line.one {
