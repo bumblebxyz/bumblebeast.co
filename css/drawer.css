@@ -132,7 +132,15 @@ body {
   opacity: 0.54;
 }
 .drawer .content ul.menu li.item:hover {
-  background: rgba(255, 211, 78, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.drawer .content ul.menu li.item:hover > p {
+-ms-transform: scale(1.1, 1.1); /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1); /* Safari */
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s ease-in-out;
+  color: #FFD34E;
 }
 /* Drawer Library */
 .rx_noselect {
