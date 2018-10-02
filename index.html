@@ -52,32 +52,62 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- header -->
-    <div class="header" id="header">
+    <header class="main-header hidden-s hidden-xs" id="header">
+        <div class="bg-color">
+            <!-- nav -->
+            <nav class="nav navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <!-- Make navbar hamburger on mobile, target collapse class -->
+                            <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <!-- brand with lilbee logo and name -->
+                            <a href="index.html" class="navbar-brand"><nobr><img height=32 width=32 src=img/logononamesmall.png id="lilbee"> &nbsp;BumbleBeast </nobr></a>
+                        </div>
+                        <!-- Right side nav, collapse into hamburger on mobile -->
+                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="spooky"><a href="#header">Home &nbsp; </a></li>
+                                <li class="spooky"><a href="#gallery">Gallery &nbsp;</a></li>
+                                <li class="spooky"><a href="#features">Features &nbsp;</a></li>
+                                <li class="hidden-s hidden-xs spooky"><a href="#try-us">Try Us &nbsp;</a></li>
+                                <li class="visible-s visible-xs spooky"><a href="#try">Try Us &nbsp;</a></li>
+                                <li class="spooky"><a href="#about">About Us &nbsp;</a></li>
+                                <li class="spooky"><a href="#contact">Contact &nbsp;</a></li>
+                                <li class="blog blog3"><a href="https://blog.bumblebeast.co" target="_blank"> Blog </a></li>
+                                <!-- <li> <button class="btn btn-submit" id="smaller" onclick="myFunct()"> Sign In </button> </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- /nav -->
+        </div>
+    </header>
+    <div class="header visible-s visible-xs" id="header">
         <div class="rx_icon" id="rx_icon"></div>
     </div>
     <div class="drawer" id="drawer">
         <div class="content">
             <div class="header">
                 <div class="avatar"></div>
-                <div class="text">
-                    <div class="field name">Michael Muzio</div>
-                    <div class="field info">FN-X</div>
-                </div>
             </div>
             <ul class="menu">
-                <li class="spooky item"><a href="#header">Home &nbsp; </a></li>
+                <li class="spooky item"><a href="#videod">Home &nbsp; </a></li>
                 <li class="spooky item"><a href="#gallery">Gallery &nbsp;</a></li>
                 <li class="spooky item"><a href="#features">Features &nbsp;</a></li>
                 <li class="hidden-s hidden-xs spooky item"><a href="#try-us">Try Us &nbsp;</a></li>
                 <li class="visible-s visible-xs spooky item"><a href="#try">Try Us &nbsp;</a></li>
                 <li class="spooky item"><a href="#about">About Us &nbsp;</a></li>
                 <li class="spooky item"><a href="#contact">Contact &nbsp;</a></li>
-                <li class="blog blog3 item"><a href="https://blog.bumblebeast.co" target="_blank"> Blog </a></li>
+                <li class="item"><a href="https://blog.bumblebeast.co" target="_blank"> Blog </a></li>
                 <!-- <li> <button class="btn btn-submit" id="smaller" onclick="myFunct()"> Sign In </button> </li> -->
             </ul>
         </div>
     </div>
-    <section class="section-padding">
+    <section class="section-padding" id="videod">
         <div class="videowrapper">
             <iframe <iframe width="560" height="315" src="https://www.youtube.com/embed/D_hCF5hlRMY?rel=0&amp;controls=0&amp;showinfo=0&amp;mute=1&amp;autoplay=1&amp;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> frameborder="0" allowfullscreen class="video"></iframe>
         </div>

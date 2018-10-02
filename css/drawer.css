@@ -1,13 +1,6 @@
-body {
-    margin: 0;
-    position: relative;
-    background: #eee;
-    font-family: sans-serif;
-  }
-  
-  #header {
+#header {
     height: 56px;
-    background: #687894;
+    background: rgba(255,211,78,0.2);
     position: fixed;
     top: 0;
     left: 0;
