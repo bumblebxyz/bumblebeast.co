@@ -567,13 +567,15 @@ h3.txt-tl {
         padding: 17px 0;
     }
     .blog {
-        background: #FFFFFF;
-        border-radius: 0px;
-        letter-spacing: 10px;
+        /* background: #FFFFFF; */
+        border-radius: 15px;
+        letter-spacing: 2px;
         color: #000000;
         margin-top: 0px;
         border: none;
-        padding: 10px 0px 10px 10%;
+        padding: 10px 10px;
+        font-size: 18px;
+        line-height:0.5;
     }
     /* Load appropriate sized background picture */
     /* TO-DO: make better background */
