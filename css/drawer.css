@@ -112,7 +112,6 @@ body {
 
 .drawer .content ul.menu li.item:after {
   content: "";
-  background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_brightness_high_black_24px.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,6 +121,28 @@ body {
   left: 16px;
   top: 12px;
   opacity: 0.54;
+}
+
+.drawer .content ul.menu li.item.onei:after {
+  background-image: url(../img/svg/black/sharp-home-24px.svg);
+}
+.drawer .content ul.menu li.item.twoi:after {
+  background-image: url(../img/svg/white/sharp-insert_photo-24px.svg);
+}
+.drawer .content ul.menu li.item.threei:after {
+  background-image: url(../img/svg/white/sharp-done_outline-24px.svg);
+}
+.drawer .content ul.menu li.item.fouri:after {
+  background-image: url(../img/svg/white/sharp-build-24px.svg);
+}
+.drawer .content ul.menu li.item.fivei:after {
+  background-image: url(../img/svg/white/sharp-info-24px.svg);
+}
+.drawer .content ul.menu li.item.sixi:after {
+  background-image: url(../img/svg/white/sharp-contacts-24px.svg);
+}
+.drawer .content ul.menu li.item.seveni:after {
+  background-image: url(../img/svg/white/sharp-text_fields-24px.svg);
 }
 .drawer .content ul.menu li.item:hover {
   background: rgba(0, 0, 0, 0.7);
@@ -134,9 +155,27 @@ body {
   transition: all 0.4s ease-in-out;
   color: #FFD34E;
 }
-.drawer .content ul.menu li.item:hover:after {
-  background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_brightness_high_white_24px.svg');
-  }
+.drawer .content ul.menu li.item.onei:hover:after {
+  background-image: url(../img/svg/black/sharp-home-24px.svg);
+}
+.drawer .content ul.menu li.item.twoi:hover:after {
+  background-image: url(../img/svg/black/sharp-insert_photo-24px.svg);
+}
+.drawer .content ul.menu li.item.threei:hover:after {
+  background-image: url(../img/svg/black/sharp-done_outline-24px.svg);
+}
+.drawer .content ul.menu li.item.fouri:hover:after {
+  background-image: url(../img/svg/black/sharp-build-24px.svg);
+}
+.drawer .content ul.menu li.item.fivei:hover:after {
+  background-image: url(../img/svg/black/sharp-info-24px.svg);
+}
+.drawer .content ul.menu li.item.sixi:hover:after {
+  background-image: url(../img/svg/black/sharp-contacts-24px.svg);
+}
+.drawer .content ul.menu li.item.seveni:hover:after {
+  background-image: url(../img/svg/black/sharp-text_fields-24px.svg);
+}
 /* Drawer Library */
 .rx_noselect {
   /* iOS Safari */
