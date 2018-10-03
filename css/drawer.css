@@ -144,12 +144,16 @@ body {
 .drawer .content ul.menu li.item.seveni:after {
   background-image: url(../img/svg/white/sharp-text_fields-24px.svg);
 }
+.drawer .content ul.menu li.item.eighti:after {
+  background-image: url(../img/svg/white/sharp-account_circle-24px.svg);
+}
+
 .drawer .content ul.menu li.item:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
 .drawer .content ul.menu li.item:hover > p {
--ms-transform: scale(1.05, 1.05); /* IE 9 */
+  -ms-transform: scale(1.05, 1.05); /* IE 9 */
   -webkit-transform: scale(1.05, 1.05); /* Safari */
   transform: scale(1.05, 1.05);
   transition: all 0.4s ease-in-out;
@@ -157,6 +161,9 @@ body {
 }
 .drawer .content ul.menu li.item.onei:hover:after {
   background-image: url(../img/svg/black/sharp-home-24px.svg);
+}
+.drawer .content ul.menu li.item.onei:hover:after > svg {
+  fill: white;
 }
 .drawer .content ul.menu li.item.twoi:hover:after {
   background-image: url(../img/svg/black/sharp-insert_photo-24px.svg);
@@ -175,6 +182,9 @@ body {
 }
 .drawer .content ul.menu li.item.seveni:hover:after {
   background-image: url(../img/svg/black/sharp-text_fields-24px.svg);
+}
+.drawer .content ul.menu li.item.eighti:hover:after {
+  background-image: url(../img/svg/black/sharp-account_circle-24px.svg);
 }
 /* Drawer Library */
 .rx_noselect {
