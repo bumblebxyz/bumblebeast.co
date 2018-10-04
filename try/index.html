@@ -74,8 +74,10 @@
             </ul>
         </div>
     </div>
-    <section id="upload" class="section-padding">
-        <div class="container clear-top"> 
+    <section id="upload" class="section-padding wow fadeInUp delay-02s">
+        <div class="container fluid"> 
+            <h1 class="head-title text-center">Upload a CAD file</h1>
+            <p class="text-center"> and we'll machine it and send it to you!</p>
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -122,14 +124,28 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">Upload File</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                  </div>
+                    <label for="exampleFormControlSelect1">Timeframe (includes shipping)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Rapid (2-3 days)</option>
+                        <option>Priority (4-7 days)</option>
+                        <option>Ground (8-14 days)</option>
+                    </select>
+                </div>
+                <div id="drop-area form-group"> 
+                    <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+                    <input type="file" id="fileElem" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)">
+                    <label class="button" for="fileElem">Select some files</label>  
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+              </form> 
         </div>
+        <br> 
+        <br>
+        <br>
     </section>
-
+<br>
+<br>
+<br>
 <!-- Footer Section-->
     <footer class="navbar navbar-fixed-bottom" id="footer">
         <div class="container">
