@@ -70,7 +70,9 @@
                 <a href="#about"><li class="spooky item fivei"><p>about us &nbsp;</p></li></a>
                 <a href="#contact"><li class="spooky item sixi"><p>contact &nbsp;</p></li></a>
                 <a href="https://blog.bumblebeast.co" target="_blank"><li class="item seveni"><p> blog</p></li></a>
-                <!-- <li> <button class="btn btn-submit" id="smaller" onclick="myFunct()"> Sign In </button> </li> -->
+                <div class="g-signin2" data-width="240" data-height="40" data-longtitle="true"></div>
+                <!--<li class="item eighti btn btn-submit" id="smaller" onclick="myFunct()"><p> Sign in with Google</p> </button> </li>-->
+                <!-- "><button class=" -->
             </ul>
         </div>
     </div>
@@ -262,9 +264,9 @@
                         <p>Upload a CAD file and we'll machine it for you!</p>
                     </div>
                 </div>
-                <div class="col-md-5 text-center" id="uploadit">
+                <div class="col-md-5 text-center upload">
                     <button class="blog cad-btn" id="CADbtn">Upload a CAD file</button>
-                    <input type="file" id="file" name="file" style="display: none;"/>
+                    <input type="file" id="file" name="file"/>
                 </div>
             </div>
         </div>
@@ -282,7 +284,7 @@
                 </div>
                 <div class="col-md-5 text-center">
                     <button class="blog cad-btn" id="CADbtn">Upload a CAD file</button>
-                    <input type="file" id="file" name="file" style="display: none;"/>
+                    <input type="file" id="file2" name="file"/>
                 </div>
             </div>
         </div>
@@ -487,19 +489,18 @@
 
 <!-- Google Maps API call -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1v6JnR2E-O9G5KTnennMa-zlzll1aGos&callback=initMap"></script>
-<!-- Firebase Scripts (App, Auth, Storage, Database) -->
-<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-storage.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
 
 <!-- Custom Script -->
 <script src="js/custom.js"></script> 
 <script src="js/drawer.js"></script> 
-
+<!-- Load JQuery Library for DOM Manipulation -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 <!-- Initialize Firebase with BumbleB Project -->
+
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 <script>
+  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDP2nPmiUWaVl2Nn3zwWHUhwYsUNRm-WtI",
     authDomain: "bumbleb-182122.firebaseapp.com",
@@ -510,8 +511,35 @@
   };
   firebase.initializeApp(config);
 </script>
+<!-- Firebase Scripts (App, Auth, Storage, Database) -->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>-->
 
 <!-- btn-submit authenticate with Google Sign-In -->
+<script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+<!--
 <script>
     function myFunct() {
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -526,6 +554,7 @@
 
 }
 </script>
+-->
 
 <!-- Load Intercom Messenger (Currently Expired) -->
 <script>
@@ -535,9 +564,6 @@
 </script>
 <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/vfz0pv9l';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
-<!-- Load JQuery Library for DOM Manipulation -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
 <!-- Javascript for bootstrap theme -->
 <script src="js/bootstrap.min.js"></script>
 <!-- wow.js for animations on scroll -->

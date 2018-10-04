@@ -1,4 +1,8 @@
-
+.upload input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    opacity: 0;
+}
 /*Make emails animate a bit */
 #emails:hover {
     color: #FFD34E;
@@ -174,7 +178,9 @@ hr {
 	text-transform: uppercase;
 	padding: 25px 0px;
 }
-
+.g-signin2 {
+    padding-left: 10px;
+}
 .btn-grad {
     border-radius: 5px;
     padding: 2px 2px 2px 2px;
@@ -216,12 +222,12 @@ hr {
 }
 
 .btn-submit {
-    background: #000000;
+    background: #FFFFFF;
     display: inline-block;
     font-weight: bold;
     border-radius: 1px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #000000;
     position: relative;
     overflow: hidden;
     -webkit-transition: all 0.4s ease-in-out;
@@ -229,8 +235,7 @@ hr {
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    margin-top: -5px;
-    border: 2px solid  #FFD34E;
+    margin: 0px 0px 0px 0px;
 }
 
 .btn-submit:hover {
