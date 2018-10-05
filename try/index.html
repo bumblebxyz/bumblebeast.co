@@ -78,63 +78,63 @@
         <div class="container fluid"> 
             <h1 class="head-title text-center">Upload a CAD file</h1>
             <p class="text-center"> and we'll machine it and send it to you!</p>
-            <form>
+            <form class="sucess-none" id="uploadform" novalidate>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputFirstName4">First Name</label>
-                        <input type="name" class="form-control" id="inputFirstName4" placeholder="First Name">
+                        <input type="name" class="form-control" id="fname" placeholder="First Name">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputLastName4">Last Name</label>
-                        <input type="name" class="form-control" id="inputLastName4" placeholder="Last Name">
+                        <input type="name" class="form-control" id="lname" placeholder="Last Name">
                     </div>
                 </div>
                 <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@gmail.com">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                         <label for="exampleInputCompany">Company</label>
-                        <input type="email" class="form-control" id="exampleInputCompany" aria-describedby="emailHelp" placeholder="FN-X Inc.">
+                        <input type="email" class="form-control" id="company" aria-describedby="emailHelp" placeholder="FN-X Inc.">
                 </div>
                 <div class="form-group">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" class="form-control" id="address1" placeholder="1234 Main St">
                 </div>
                 <div class="form-group">
                     <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control" id="city">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
+                        <select id="state" class="form-control">
                         <option selected>Choose...</option>
-                        <option>...</option>
+                        <option>California</option>
                         </select>
                     </div>
                     <div class="form-group col-md-2">
                         <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control" id="zip">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Timeframe (includes shipping)</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="timeframe">
                         <option>Rapid (2-3 days)</option>
                         <option>Priority (4-7 days)</option>
                         <option>Ground (8-14 days)</option>
                     </select>
                 </div>
-                <div id="drop-area form-group"> 
+                <div id="drop-area form-group custom-file"> 
                     <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
-                    <input type="file" id="fileElem" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)">
-                    <label class="button" for="fileElem">Select some files</label>  
+                    <input type="file" id="fileElem uploadfile" class="custom-file-input" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)">
+                    <label class="button custom-file-label" for="fileElem">Select some files</label>  
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form> 
@@ -181,16 +181,6 @@
         </div>
     </footer>
     <!-- /Footer Section-->
-
-<!-- Google Maps API call -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1v6JnR2E-O9G5KTnennMa-zlzll1aGos&callback=initMap"></script>
-
-<!-- Custom Script -->
-<script src="../js/custom.js"></script> 
-<script src="../js/drawer.js"></script> 
-<!-- Load JQuery Library for DOM Manipulation -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/jquery.easing.min.js"></script>
 <!-- Initialize Firebase with BumbleB Project -->
 
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
@@ -210,7 +200,54 @@
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
-<!--<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>-->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if ($('#uploadform').length > 0 ) {
+            contactScript('forcontact');
+        }
+    });
+    //firebase
+    function contactScript(value) {
+        var config = {
+            apiKey: "AIzaSyDP2nPmiUWaVl2Nn3zwWHUhwYsUNRm-WtI",
+            authDomain: "bumbleb-182122.firebaseapp.com",
+            databaseURL: "https://bumbleb-182122-19ead.firebaseio.com",
+            projectId: "bumbleb-182122",
+            storageBucket: "bumbleb-182122.appspot.com",
+            messagingSenderId: "1074760668629"
+        };
+         firebase.initializeApp(config);
+        var a = firebase.database().ref("messages");
+            $("#newContact").submit(function(config) { $(this), console.log("Submit to Firebase");
+            var b = $("#fname").val(),
+                c = $("#lname").val(),
+                d = $("#email").val(),
+                z = $("#company").val(),
+                f = $("#address1").val(),
+                g = $("#address2").val(),
+                h = $("#city").val(),
+                i = $("#state").val(),
+                j = $("#zip").val(),
+                k = $("#timeframe").val(),
+                l = $("#uploadfile").val(),
+                m = { firstName: b, lastName: c, email: d, company: z, address1: f,address2: g, city: h, state: i, zip: j, timeframe: k, file: l};
+            return a.push(m).then(function(config) { 
+                $(".sucess").css("display", "block"), 
+                $(".sucess-none").css("display", "none") }), !1 })   
+    }
+</script>
+<!-- Google Maps API call -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1v6JnR2E-O9G5KTnennMa-zlzll1aGos&callback=initMap"></script>
+
+<!-- Custom Script -->
+<script src="../js/custom.js"></script> 
+<script src="../js/drawer.js"></script> 
+<!-- Load JQuery Library for DOM Manipulation -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+
 
 <!-- btn-submit authenticate with Google Sign-In -->
 <script>
