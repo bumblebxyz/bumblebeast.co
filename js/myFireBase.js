@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 var messagesRef = firebase.database().ref('messages');
 
 
-document.getElementById('myform').addEventListener('submit', submitForm);
+document.getElementById('myForm').addEventListener('submit', submitForm);
 
 function submitForm(e) {
     e.preventDefault();
@@ -28,11 +28,17 @@ function submitForm(e) {
     var timeframe = getInputVal('timeframe');
 
     saveMessage(fname, lname, email, company, address1, address2, city, state, zip, timeframe);
+
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+    }, 3000);
 }
 
 function getInputVal(id) {
     return document.getElementById(id).value;
-})
+}
 
 function saveMessage(fname, lname, email, company, address1, address2, city, state, zip, timeframe) {
     var newMessageRef = messagesRef.push();

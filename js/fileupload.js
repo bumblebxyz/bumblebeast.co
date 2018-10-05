@@ -25,29 +25,5 @@ function unhighlight(e) {
 dropArea.classList.remove('highlight')
 };
 
-dropArea.addEventListener('drop', handleDrop, false);
 
-function handleDrop(e) {
-    let dt = e.dataTransfer
-    let files = dt.files
 
-    handleFiles(files)
-};
-
-function handleFiles(files) {
-    ([...files]).forEach(uploadFile)
-};
-
-function uploadFile(file) {
-    let url = 'YOUR URL HERE'
-    let formData = new FormData()
-  
-    formData.append('file', file)
-  
-    fetch(url, {
-      method: 'POST',
-      body: formData
-    })
-    .then(() => { /* Done. Inform the user */ })
-    .catch(() => { /* Error. Inform the user */ })
-};

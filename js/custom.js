@@ -54,9 +54,9 @@ function initMap() {
 // 
 //
 // Add Click Listener to CAD File Upload Button 
-document.getElementById("CADbtn").addEventListener("click", function() { 
-    document.getElementById("file").click();
-});
+//document.getElementById("CADbtn").addEventListener("click", function() { 
+//    document.getElementById("file").click();
+//});
 
 var storageRef = firebase.storage().ref();
 var database = firebase.database();
@@ -109,13 +109,13 @@ function handleFileSelect(evt) {
 }
 
 window.onload = function() {
-    document.getElementById('file').addEventListener('change', handleFileSelect, false);
-    document.getElementById('file').disabled = false;
+    document.getElementById('uploadfile').addEventListener('change', handleFileSelect, false);
+    document.getElementById('uploadfile').disabled = false;
 
     auth.onAuthStateChanged(function(user) {
         if (user) {
         console.log('Anonymous user signed-in.', user);
-        document.getElementById('file').disabled = false;
+        document.getElementById('uploadfile').disabled = false;
         } else {
         console.log('There was no anonymous session. Creating a new anonymous user.');
         // Sign the user in anonymously since accessing Storage requires the user to be authorized.
