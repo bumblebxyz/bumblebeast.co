@@ -1,11 +1,11 @@
 body {
   margin: 0;
   position: relative;
-  background: #eee;
+  background: #FFF;
   font-family: sans-serif;
 }
 #header {
-  height: 56px;
+  height: 60px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;

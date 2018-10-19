@@ -54,7 +54,7 @@
     <!-- header -->
     <div class="header" id="header">
         <div class="rx_icon" id="rx_icon"></div>
-        <div class="title">BumbleBeast </div>
+        <div class="title"> <a href="#home"> BumbleBeast </a></div>
     </div>
     <div class="drawer" id="drawer">
         <div class="content">
@@ -82,21 +82,56 @@
         </div>
     </section>
     <!-- /header -->
-    <!---->
-    <!-- Quote Section -->
-    <!--   
-    <section id="quotable">
-        <div class="container">
-            <div class="row">
-                <div class="cta-info text-center">
-                    <h3><span class="dec-tec">“</span> Beats the CNC machine we paid $50,000 for. <span class="dec-tec">”</span> -Prof. Gokli, HMC Engineering</h3>
-                </div> 
+    <!-- Suggestions Section-->
+    <section class="section-padding wow fadeInUp delay-02s" id="pre-order">
+        <div class="container-fluid">
+            <h1 class="head-title text-center">Pre-Order Now</h1>
+            <p class="text-center">You'll get your BumbleBeast in 5 weeks</p>
+            <br>
+            <!-- Row for centered suggestion button-->
+            <div class="row text-center">
+                    <form action="db.py" method="POST">
+                            <script
+                              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                              data-key="pk_test_rnGUrV4Kv4uOJzH7LNcMHOCw"
+                              data-amount="50000"
+                              data-name="BumbleBeast"
+                              data-label="Submit Your Pre-Order"
+                              data-description="Pre-Order"
+                              data-image="/img/logononamesmall.png"
+                              data-locale="auto"
+                              data-billing-address="true">
+                            </script>
+                    </form>
+                    <br> 
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Important Information
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Important Information</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>$500 is only a down payment to secure your order.</p>
+                                <p>Total selling price is $10000.</p>
+                                <p>You will have to pay the remaining $9500 at time of delivery.</p>
+                                <p><a href="#contact" target="_blank">Contact us</a> if you want to cancel your pre-order. We'll refund you immediately!</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
+            <br>
+            <h4 class="text-center">Money Back Guaranteed</h4>
+            <p class="text-center">Let us know that you're interested!</p>
         </div>
     </section>
-    -->
-    <!-- /Quote Section -->
-    <!---->
+    <!-- /Suggestions Section-->
     <!-- Photo Gallery Section -->
     <section id="gallery" class="section-padding">
         <div class="container"> 
@@ -457,7 +492,7 @@
             <div class="row text-center">
                 <!-- Update Copyright -->
                 <div class="footer-copyright pull-left">
-                    <a href="https://bumblebeast.co/index.html" target="_blank"> © 2017 FN-X Inc. </a>
+                    <a href="#home"> © 2017 FN-X Inc. </a>
                 </div>
                 <!-- Social Icons -->
                 <!--
