@@ -86,48 +86,76 @@
     <section class="section-padding wow fadeInUp delay-02s" id="pre-order">
         <div class="container-fluid">
             <h1 class="head-title text-center">Pre-Order Now</h1>
-            <p class="text-center">You'll get your BumbleBeast in 5 weeks</p>
-            <br>
+            <h4 class="text-center">Money Back Guaranteed</h4>
+            <p class="text-center"> By submitting your pre-order you indicate that you have read and agree to the <a data-toggle="modal" data-target="#exampleModalCenter" style="color: black">Terms & Conditions</a></p>
             <div class="row text-center">
-                    <form action="db.py" method="POST">
-                            <script
-                              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                              data-key="pk_test_rnGUrV4Kv4uOJzH7LNcMHOCw"
-                              data-amount="50000"
-                              data-name="BumbleBeast"
-                              data-label="Submit Your Pre-Order"
-                              data-description="Pre-Order"
-                              data-image="/img/logononamesmall.png"
-                              data-locale="auto"
-                              data-billing-address="true">
-                            </script>
-                    </form>
-                    <br> 
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        Important Information
-                    </button>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
+                <form action="db.py" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_rnGUrV4Kv4uOJzH7LNcMHOCw"
+                        data-amount="50000"
+                        data-name="BumbleBeast"
+                        data-label="Submit Your Pre-Order"
+                        data-description="Pre-Order"
+                        data-image="/img/logononamesmall.png"
+                        data-locale="auto"
+                        data-billing-address="true">
+                    </script>
+                </form>
+                <br>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Terms & Conditions
+                </button>
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Important Information</h5>
+                                <h2 class="modal-title" id="exampleModalLongTitle">Terms & Conditions</h2>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true" style="color: red">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>$500 is only a down payment to secure your order.</p>
-                                <p>Total selling price is $10000.</p>
-                                <p>You will have to pay the remaining $9500 at time of delivery.</p>
-                                <p><a href="#contact" target="_blank">Contact us</a> if you want to cancel your pre-order. We'll refund you immediately!</p>
-                            </div>
+                                <p class="text center">$500 is a down payment to secure your order. Total purchase price is $10000. You will have to pay the remaining $9500 at time of delivery. Expect delivery within 6 weeks.</p>
+                                <p class="text center"><a href="#contact" target="_blank" style="color: black">Contact us</a> if you want to cancel your pre-order. You will be refunded within 24 hours. You can cancel any time before delivery.</p>
+                                <p class="text center"> After delivery, refunds will be subject to our <a data-toggle="modal" data-target="#exampleModalCenter2" style="color: black">limited warranty.</a></p>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLongTitle">Limited Warranty</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: red">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text center"> All BumbleBeast orders are subject to a 100% money back conditional warranty within 30 days of delivery. Read the Conditions section for qualifying conditions.</p>
+                                <p class="text center"> After 30 days, you are entitled to a partial money back conditional warranty. Read the Partial Money Back section to understand how much money back you may be entitled to. Read the Conditions section for qualifying conditions.</p>
+                                <p class="text center"><a href="#contact" target="_blank" style="color: black">Contact us</a> if you want to arrange a return. We will pick it up within one week. You will be refunded within 3 days after pick up if your return has met the qualifying conditions.</p>
+                                <h3 class="text center">Conditions</h3>
+                                <p class="text center"> To qualify for a refund, you must operate the machine according to the following conditions</p>
+                                <h4 class="text center">Operating Conditions</h4> 
+                                <h6 class="text center">Machinable Materials</h6>
+                                <p class="text center"> When operating the BumbleBeast as a CNC mill, you may only mill specified materials. Those materials include: foams, plastics, ceramics, alloys consisting primarily of aluminum, and tool steels.</p>
+                                <h4 class="text center">Environmental Conditions</h4> 
+                                <h6 class="text center">Temperature</h6>
+                                <p class="text center"> BumbleBeast must not operate in an environment with temperature over 100 &deg;F for over an hour at a time. BumbleBeast must be completely turned off for a time equal to or greater than the operating time before operating can be resumed again.</p>
+                                <p class="text center"> BumbleBeast must not operate in an environment with temperature over 90 &deg;F for over four hours. BumbleBeast must be completely turned off for a time equal to or greater than half the operating time before operating can be resumed again.</p>
+                                <p class="text center"> BumbleBeast must not operate in an environment with temperature over 80 &deg;F for over four hours. BumbleBeast must be completely turned off for a time equal to or greater than one-fourth the operating time before operating can be resumed again.</p>
+                                <h6 class="text center">Other Environmental Conditions</h6>
+                                
+                                <h3 class="text center">Partial Money Back</h3>
+                                <p class="text center"> After 30 days post-delivery, you will be entitled to a partial refund of the total purchase price. The refund will decrease from 100% of purchase price at 30 days to 0% of purchase price after 1030 days on a prorated basis. </p>
+                                <p class="text center"> For example, after 130 days, you will be entitled to a refund of 90% of the purchase price. After 530 days, you will entitled to a refund of 50% of the purchase price. After 1029 days, you will be entitled to a refund of 0.1% of the purchase price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br>
-            <h4 class="text-center">Money Back Guaranteed</h4>
-            <p class="text-center">Let us know that you're interested!</p>
         </div>
     </section>
     <!-- /Suggestions Section-->
