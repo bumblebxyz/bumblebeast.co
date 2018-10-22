@@ -65,100 +65,27 @@
                 <a href="#home"><li class="spooky item onei"><p>home &nbsp;</p></li></a>
                 <a href="#gallery"><li class="spooky item twoi"><p>gallery &nbsp;</p></li></a>
                 <a href="#features"><li class="spooky item threei"><p>features &nbsp;</p></li></a>
-                <a href="/try"><li class="hidden-s hidden-xs spooky item fouri"><p>try us &nbsp;</p></li></a>
-                <a href="/try"><li class="visible-s visible-xs spooky item fouri"><p>try us &nbsp;</p></li></a>
+                <a href="/try"><li class="spooky item fouri"><p>try us &nbsp;</p></li></a>
                 <a href="#about"><li class="spooky item fivei"><p>about us &nbsp;</p></li></a>
                 <a href="#contact"><li class="spooky item sixi"><p>contact &nbsp;</p></li></a>
                 <a href="https://blog.bumblebeast.co" target="_blank"><li class="item seveni"><p> blog</p></li></a>
                 <div class="g-signin2" data-width="240" data-height="40" data-longtitle="true"></div>
-                <!--<li class="item eighti btn btn-submit" id="smaller" onclick="myFunct()"><p> Sign in with Google</p> </button> </li>-->
-                <!-- "><button class=" -->
             </ul>
         </div>
     </div>
+    <!-- /header -->
     <section class="section-padding" id="home">
         <div class="videowrapper">
-            <iframe <iframe width="560" height="315" src="https://www.youtube.com/embed/D_hCF5hlRMY?rel=0&amp;controls=0&amp;showinfo=0&amp;mute=1&amp;autoplay=1&amp;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> frameborder="0" allowfullscreen class="video"></iframe>
-        </div>
-    </section>
-    <!-- /header -->
-    <!-- Pre-Order Section-->
-    <section class="section-padding wow fadeInUp delay-02s" id="pre-order">
-        <div class="container-fluid">
-            <h1 class="head-title text-center">Pre-Order Now</h1>
-            <h4 class="text-center">Money Back Guaranteed</h4>
-            <p class="text-center"> By submitting your pre-order you indicate that you have read and agree to the <a data-toggle="modal" data-target="#exampleModalCenter" style="color: black">Terms & Conditions</a></p>
+            <iframe id="video-background" src="https://www.youtube.com/embed/D_hCF5hlRMY?rel=0&amp;controls=0&amp;showinfo=0&amp;mute=1&amp;autoplay=1&amp;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen frameborder="0" allowfullscreen class="video"></iframe>
             <div class="row text-center">
-                <form action="db.py" method="POST">
-                    <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_test_rnGUrV4Kv4uOJzH7LNcMHOCw"
-                        data-amount="50000"
-                        data-name="BumbleBeast"
-                        data-label="Submit Your Pre-Order"
-                        data-description="Pre-Order"
-                        data-image="/img/logononamesmall.png"
-                        data-locale="auto"
-                        data-billing-address="true">
-                    </script>
-                </form>
                 <br>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                    Terms & Conditions
-                </button>
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h2 class="modal-title" id="exampleModalLongTitle">Terms & Conditions</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" style="color: red">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="text center">$500 is a down payment to secure your order. Total purchase price is $10000. You will have to pay the remaining $9500 at time of delivery. Expect delivery within 6 weeks.</p>
-                                <p class="text center"><a href="#contact" target="_blank" style="color: black">Contact us</a> if you want to cancel your pre-order. You will be refunded within 24 hours. You can cancel any time before delivery.</p>
-                                <p class="text center"> After delivery, refunds will be subject to our <a data-toggle="modal" data-target="#exampleModalCenter2" style="color: black">limited warranty.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h2 class="modal-title" id="exampleModalLongTitle">Limited Warranty</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" style="color: red">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="text center"> All BumbleBeast orders are subject to a 100% money back conditional warranty within 30 days of delivery. Read the Conditions section for qualifying conditions.</p>
-                                <p class="text center"> After 30 days, you are entitled to a partial money back conditional warranty. Read the Partial Money Back section to understand how much money back you may be entitled to. Read the Conditions section for qualifying conditions.</p>
-                                <p class="text center"><a href="#contact" target="_blank" style="color: black">Contact us</a> if you want to arrange a return. We will pick it up within one week. You will be refunded within 3 days after pick up if your return has met the qualifying conditions.</p>
-                                <h3 class="text center">Conditions</h3>
-                                <p class="text center"> To qualify for a refund, you must operate the machine according to the following conditions</p>
-                                <h4 class="text center">Operating Conditions</h4> 
-                                <h6 class="text center">Machinable Materials</h6>
-                                <p class="text center"> When operating the BumbleBeast as a CNC mill, you may only mill specified materials. Those materials include: foams, plastics, ceramics, alloys consisting primarily of aluminum, and tool steels.</p>
-                                <h4 class="text center">Environmental Conditions</h4> 
-                                <h6 class="text center">Temperature</h6>
-                                <p class="text center"> BumbleBeast must not operate in an environment with temperature over 100 &deg;F for over an hour at a time. BumbleBeast must be completely turned off for a time equal to or greater than the operating time before operating can be resumed again.</p>
-                                <p class="text center"> BumbleBeast must not operate in an environment with temperature over 90 &deg;F for over four hours. BumbleBeast must be completely turned off for a time equal to or greater than half the operating time before operating can be resumed again.</p>
-                                <p class="text center"> BumbleBeast must not operate in an environment with temperature over 80 &deg;F for over four hours. BumbleBeast must be completely turned off for a time equal to or greater than one-fourth the operating time before operating can be resumed again.</p>
-                                <h6 class="text center">Other Environmental Conditions</h6>
-                                
-                                <h3 class="text center">Partial Money Back</h3>
-                                <p class="text center"> After 30 days post-delivery, you will be entitled to a partial refund of the total purchase price. The refund will decrease from 100% of purchase price at 30 days to 0% of purchase price after 1030 days on a prorated basis. </p>
-                                <p class="text center"> For example, after 130 days, you will be entitled to a refund of 90% of the purchase price. After 530 days, you will entitled to a refund of 50% of the purchase price. After 1029 days, you will be entitled to a refund of 0.1% of the purchase price.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <br>
+                <br>
+                <a href="/pre-order"><button class="button" id="pre-order">Pre-Order Now</button></a>            
             </div>
         </div>
     </section>
-    <!-- /Suggestions Section-->
     <!-- Photo Gallery Section -->
     <section id="gallery" class="section-padding">
         <div class="container"> 
@@ -313,47 +240,22 @@
             </div>
         </div>
     </section>
-    <!--<div class="try-usa">-->
     <!-- /Features Section -->
-    <!---->
-    <!-- Try It (Large Device) Section -->
-    <section class="section-padding parallax bg-image-2 section wow fadeIn delay-02s hidden-xs hidden-s" id="try-us">
-        <div class="container"
-            <div class="row">
-                <div class="col-md-7" id="tryit">
-                    <div class="cta-txt">
-                        <h3>Give Us a Try</h3>
-                        <p>Upload a CAD file and we'll machine it for you!</p>
-                    </div>
-                </div>
-                <div class="col-md-5 text-center upload">
-                    <a href="/try"><button class="blog cad-btn" id="CADbtn">Upload a CAD file</button></a>
-                    <!--<input type="file" id="file" name="file"/>-->
+    <!-- Try It Section -->
+    <section class="section-padding parallax wow fadeInUp delay-02s" id="try-us">
+            <div class="container-fluid">
+                <h2 class="head-title text-center">Give Us a Try</h1>
+                <!-- Row for centered suggestion button-->
+                <div class="row text-center">
+                        <p> Upload a CAD file and we'll machine it for you!</p>
+                        <br> 
+                        <a href="/try"><button class="button" id="CADbtn" style="display:inline-block;text-decoration:none;background-color:#FFD34E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;">Upload a CAD file</button></a>
+                        <br>
+                        <br>
                 </div>
             </div>
-        </div>
     </section>
-    <!-- /Try It (Large Device) Section -->
-    <!---->
-    <!-- Try It (Small Device) Section -->
-    <section class="section-padding parallax bg-image-2-sm section wow fadeIn delay-02s visible-xs visible-s" id="try">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="cta-txt">
-                        <h3>Give Us a Try</h3>
-                        <p>Upload a CAD file and we'll machine it for you!</p>
-                    </div>
-                </div>
-                <div class="col-md-5 text-center">
-                    <a href="/try"><button class="blog cad-btn" id="CADbtn">Upload a CAD file</button></a>
-                    <!--<input type="file" id="file" name="file"/>-->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Try It (Small Device) Section -->
-    <!--</div>-->
-    <!---->
+    <!-- /Try It Section -->
     <!-- About Section-->
     <section class="section-padding wow fadeInUp delay-02s" id="about">
         <div class="container">

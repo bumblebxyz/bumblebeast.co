@@ -1,3 +1,48 @@
+.modal-header .close {
+    margin-top: -45px;
+}
+button.close {
+    padding: 8px;
+}
+
+button {
+    display:inline-block;
+    text-decoration:none;
+    background-color:#FFD34E;
+    color:white;
+    cursor:pointer;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:20px;
+    line-height:50px;
+    text-align:center;
+    margin:0;
+    height:50px;
+    padding:0px 33px;
+    border-radius:25px;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight:bold;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+#video-background {
+    z-index: -99;
+}
+#terms {
+    color: black;
+}
+#terms:hover {
+    color: #FFD34E;
+    -ms-transform: scale(1.2, 1.2); /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2); /* Safari */
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
 .modal {
     vertical-align: middle; 
 }
@@ -14,16 +59,19 @@
     display: none;
 }
 
-#drop-area {
+.drop-area {
     border: 2px dashed #ccc;
     border-radius: 20px;
-    width: 480px;
+    width: 75%;
     font-family: sans-serif;
     margin: 100px auto;
     padding: 20px;
   }
-#drop-area.highlight {
+.drop-area.highlight {
     border-color: purple;
+}
+.drop-area:hover {
+    cursor: copy;
 }
 
 .upload input[type=file] {
@@ -409,11 +457,11 @@ h3.txt-tl {
     margin-right: auto; 
 }
 
-.img-responsive, .typeform-share, .blog {
+.img-responsive, .typeform-share, .blog, button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-responsive:hover, .typeform-share:hover, .blog:hover {
+.img-responsive:hover, .typeform-share:hover, .blog:hover, button:hover {
     -ms-transform: scale(1.1, 1.1); /* IE 9 */
     -webkit-transform: scale(1.1, 1.1); /* Safari */
     transform: scale(1.1, 1.1);

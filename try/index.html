@@ -69,17 +69,15 @@
                 <a href="../#contact"><li class="spooky item sixi"><p>contact &nbsp;</p></li></a>
                 <a href="https://blog.bumblebeast.co" target="_blank"><li class="item seveni"><p> blog</p></li></a>
                 <div class="g-signin2" data-width="240" data-height="40" data-longtitle="true"></div>
-                <!--<li class="item eighti btn btn-submit" id="smaller" onclick="myFunct()"><p> Sign in with Google</p> </button> </li>-->
-                <!-- "><button class=" -->
             </ul>
         </div>
     </div>
     <section id="upload" class="section-padding wow fadeInUp delay-02s">
         <div class="container fluid"> 
-            <h1 class="head-title text-center">Upload a CAD file</h1>
-            <p class="text-center"> and we'll machine it and send it to you!</p>
+            <h1 class="head-title text-center">Upload CAD files</h1>
+            <p class="text-center"> We'll machine them and send them to you!</p>
             <div class="alert"> Thanks! Your files have been received.</div>
-            <form class="myForm" id="myForm" novalidate>
+            <form action="upload.py" class="myForm" id="myForm" novalidate>
                 <div class="form-group form-row">
                     <div class="form-group col-md-6">
                         <label for="inputFirstName4">First Name</label>
@@ -182,13 +180,15 @@
                         <option>Ground (8-14 days)</option>
                     </select>
                 </div>
-                <div id="drop-area form-group custom-file"> 
-                    <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
-                    <input type="file" id="fileElem uploadfile" class="custom-file-input" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)" required>
-                    <label class="button custom-file-label" for="fileElem">Select some files</label>  
+                <div class="drop-area form-group custom-file" id="drop-area" style="display:block;margin: 0 auto;"> 
+                    <p class="text-center">Upload with the file dialog or by dragging and dropping.</p>      
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form> 
+                <input type="file" id="uploadfile" class="custom-file-input" style="display:none;" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)" required>
+                <br>
+                <div class="row text-center">
+                    <button type="submit" class="button row text-center">Upload Your Files</button>
+                </div>
+            </form> 
         </div>
         <br> 
         <br>
@@ -256,7 +256,12 @@
 <script src="../js/custom.js"></script> 
 <script src="../js/drawer.js"></script> 
 <script src="../js/fileupload.js"></script>
-
+<script> 
+    $('.drop-area').click(function() {
+        $('#uploadfile').click();
+        return false;
+    }) 
+</script>
 <!-- btn-submit authenticate with Google Sign-In -->
 <script>
     function onSuccess(googleUser) {
