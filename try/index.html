@@ -180,8 +180,17 @@
                         <option>Ground (8-14 days)</option>
                     </select>
                 </div>
-                <div class="drop-area form-group custom-file" id="drop-area" style="display:block;margin: 0 auto;"> 
-                    <p class="text-center">Upload with the file dialog or by dragging and dropping.</p>      
+                <div class="drop-area form-group custom-file" id="drop-area" style="display:block;margin: 0 auto;">
+                        <!--
+                        <div class="text-center">
+                            <i class="icon-plus">
+                                <div class="circle"></div>
+                                <div class="axis-x"></div>
+                                <div class="axis-y"></div>
+                            </i>
+                        </div>
+                        -->
+                        <p class="text-center">Drag and drop or click to browse.</p>       
                 </div>
                 <input type="file" id="uploadfile" class="custom-file-input" style="display:none;" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)" required>
                 <br>

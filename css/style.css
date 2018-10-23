@@ -1,3 +1,45 @@
+button:focus {
+    outline:0;
+}
+
+.drop-area:hover .icon-plus>.circle {
+	transform: scale(1.1,1.1);
+	border-color: #FFD34E;
+}
+
+i.icon-plus>.circle {
+	position: relative;
+	width: 4em;
+	height: 4em;
+	border-radius: 100%;
+	border: .2em solid #FFD34E;
+	transition: .4s;
+}
+
+i.icon-plus>.axis-x {
+	width: 2em;
+	height: .2em;
+	top: 1.9em;
+	left: 1em;
+}
+i.icon-plus>.axis-x, i.icon-plus>.axis-y {
+	position: absolute;
+	background-color: #FFD34E;
+	transition: .3s;
+}
+
+i.icon-plus>.axis-y {
+	width: .2em;
+	height: 2em;
+	top: 1em;
+	left: 1.9em;
+}
+i.icon-plus>.axis-x, i.icon-plus>.axis-y {
+	position: absolute;
+	background-color: #FFD34E;
+	transition: .3s;
+}
+
 .modal-header .close {
     margin-top: -45px;
 }
@@ -60,12 +102,12 @@ button {
 }
 
 .drop-area {
-    border: 2px dashed #ccc;
+    border: 3px dashed #FFD34E;
     border-radius: 20px;
     width: 75%;
     font-family: sans-serif;
     margin: 100px auto;
-    padding: 20px;
+    padding: 50px;
   }
 .drop-area.highlight {
     border-color: purple;
