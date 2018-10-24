@@ -14,6 +14,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PZ5ZNS4');</script>
     <!-- End Google Tag Manager -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <meta charset="utf-8">
     <!-- Make page responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -180,6 +181,9 @@
                 </div>
                 <input type="file" id="uploadfile" class="custom-file-input" style="display:none;" multiple accept=".step,.STEP,,f3d,.iges" onchange="handleFiles(this.files)" required>
                 <br>
+                <div class="recaptchadiv">
+                    <div class="g-recaptcha" data-sitekey="6LemtnYUAAAAAIHiY89zl5Z0WiJT9d8i06ALQ2tP"></div>
+                </div>
                 <div class="row text-center">
                     <button type="submit" class="button row text-center">Upload Your Files</button>
                 </div>
