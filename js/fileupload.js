@@ -5,7 +5,7 @@ let dropArea = document.getElementById('drop-area');
 });
   
 function preventDefaults (e) {
-    e.preventDefault()
+    e.preventDefault( )
     e.stopPropagation()
 };
 
@@ -24,6 +24,11 @@ dropArea.classList.add('highlight')
 function unhighlight(e) {
 dropArea.classList.remove('highlight')
 };
+
+$('.drop-area').click(function() {
+    $('#uploadfile').click();
+    return false;
+}) 
 
 
 
