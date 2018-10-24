@@ -14,19 +14,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PZ5ZNS4');</script>
     <!-- End Google Tag Manager -->
-    <!-- Google Analytics -->
-    <!--
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-107303483-1', 'auto');
-    ga('require', 'GTM-M79SLQ4');
-    ga('send', 'pageview');
-    </script>
-    -->
-    <!-- End Google Analytics -->
     <meta charset="utf-8">
     <!-- Make page responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,8 +93,7 @@
                         country="US">
                     </script>
                     <script>
-                        // Hide default stripe button, be careful there if you
-                        // have more than 1 button of that class
+                        // Hide default stripe button
                         document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
                     </script>
                     <button type="submit" class="button"> Submit Your Pre-Order</button>
@@ -126,14 +112,6 @@
             <div class="footer-copyright pull-left">
                 <a href="https://bumblebeast.co" target="_blank"> © 2017 FN-X Inc. </a>
             </div>
-            <!-- Social Icons -->
-            <!--
-            <div class="footer-social">
-                <a href="https://facebook.com/BeastBumble" target="_blank"><i class="fa fa-facebook-square fa-2x" id="facebook"></i></a>
-                <a href="https://twitter.com/BeastBumble" target="_blank"><i class="fa fa-twitter-square fa-2x" id="twitter"></i></a>
-                <a href="https://reddit.com/r/bumbleb" target="_blank"><i class="fa fa-reddit-square fa-2x" id="reddit"></i></a>
-            </div>
-            -->
             <!-- Iubenda Privacy Policy -->
             <div class="footer-tos pull-right">
                 <a href="https://www.iubenda.com/privacy-policy/24514671" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a> 
@@ -156,18 +134,14 @@
 <!-- Initialize Firebase with BumbleB Project -->
 
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-<!-- Firebase Scripts (App, Auth, Storage, Database) -->
+<!-- Firebase Scripts (App, Auth) -->
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
 
 <!-- Load JQuery Library for DOM Manipulation -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/jquery.easing.min.js"></script>
 
-<!-- FireBase post form to database-->
-<script src="../js/myFireBase.js"></script>
 <!-- Google Maps API call -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1v6JnR2E-O9G5KTnennMa-zlzll1aGos&callback=initMap"></script>
 
@@ -176,13 +150,6 @@
 <!-- Custom Script -->
 <script src="../js/custom.js"></script> 
 <script src="../js/drawer.js"></script> 
-<script src="../js/fileupload.js"></script>
-<script> 
-    $('.drop-area').click(function() {
-        $('#uploadfile').click();
-        return false;
-    }) 
-</script>
 <!-- btn-submit authenticate with Google Sign-In -->
 <script>
     function onSuccess(googleUser) {
@@ -205,22 +172,6 @@
   </script>
 
 <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-<!--
-<script>
-    function myFunct() {
-    var provider = new firebase.auth.GoogleAuthProvider();
-
-    provider.addScope('https://www.googleapis.com/auth/plus.login');
-
-    firebase.auth().signInWithPopup(provider).then(function(authData) {
-        console.log(authData);
-    }).catch(function(error) {
-        console.log(error);
-    });
-
-}
-</script>
--->
 
 <!-- Load Intercom Messenger (Currently Expired) -->
 <script>
@@ -234,7 +185,7 @@
 <script src="../js/bootstrap.min.js"></script>
 <!-- Mailchimp Subscripe to Newsletter Form -->
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"8b71c25a922888fbd7f020d3c","lid":"a5dbb2cdd4"}) })</script>
-<!--<script src="contactform/contactform.js"></script>-->
+<!-- modal goes befor </body> tag-->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
