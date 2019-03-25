@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2018 FN-X Inc. All rights reserved.
+-->
+<html lang="en">
+  <head>
+      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="1cc65518-0856-4621-a42b-553619e77517" type="text/javascript" async></script>
+      <!-- Page-hiding snippet (recommended)  -->
+      <style>.async-hide { opacity: 0 !important} </style>
+      <!-- Google Tag Manager-->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PZ5ZNS4');</script>
+      <!-- End Google Tag Manager -->
+    
+      <meta charset="utf-8">
+      <!-- Make page responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Sign-In Client ID -->
+      <meta name="google-signin-client_id" content="1074760668629-ta3fvntvm30p92qtnlvfh3tn8fpdrs39.apps.googleusercontent.com">
+      <!-- SEO Tags -->
+      <title>BumbleBeast - Bumblebeast Form</title>
+      <meta name="description" content="Customize your Bumblebeast.">
+      <meta name="keywords" content="BumbleBeast">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@BeastBumble">
+      <meta property="og:url" content="https://bumblebeast.co/try" />
+      <meta property="og:title" content="BumbleBeast - Bumblebeast Form" />
+      <meta property="og:description" content="Customize your Bumblebeast."/>
+      <meta property="og:image" content="https://bumblebeast.co/img/background.png" />
+      <!-- Open Sans Font -->
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+      <!-- Load in Stylesheets - Bootstrap (Theme), FontAwesome (Icons), Animate (Animations), Style (Custom Styles) -->
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/animate.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/drawer.css">
+
+      <link rel="stylesheet" type="text/css" href="../trial/style.css">
+      <script type="text/javascript" src="form.js"></script>
+    </head>
+
+    <body onload='hideTotal()'>
+        <!-- header -->
+        <div class="header" id="header">
+            <div class="rx_icon" id="rx_icon"></div>
+            <div class="title"><a href="https://bumblebeast.co">BumbleBeast</a></div>
+        </div>
+        <div class="drawer" id="drawer">
+            <div class="content">
+                <div class="header">
+                    <div class="avatar"></div>
+                </div>
+                <ul class="menu">
+                    <a href="../#home"><li class="spooky item onei"><p>home &nbsp;</p></li></a>
+                    <a href="../#gallery"><li class="spooky item twoi"><p>gallery &nbsp;</p></li></a>
+                    <a href="../#features"><li class="spooky item threei"><p>features &nbsp;</p></li></a>
+                    <a href="../#about"><li class="spooky item fivei"><p>about us &nbsp;</p></li></a>
+                    <a href="../#contact"><li class="spooky item sixi"><p>contact &nbsp;</p></li></a>
+                    <a href="https://blog.bumblebeast.co" target="_blank"><li class="item seveni"><p> blog</p></li></a>
+                    <div class="g-signin2" data-width="240" data-height="40" data-longtitle="true"></div>
+                </ul>
+            </div>
+        </div>
+
+        <div id="wrap">
+            <form action="" id="Bumblebeastform" onsubmit="return false;">
+                <div>
+                    <div class="cont_order">
+                        <fieldset>
+                        <legend><i>Customize your Bumblebeast!</i></legend>
+
+                        <label><strong>Travel/mm (X*Y*Z)</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedtravel" value="travel1" checked onclick="calculateTotal()" />500X500X280 (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-05/9/9/enhanced/webdr07/original-19198-1462799634-2.jpg?downsize=700:*&output-format=auto&output-quality=auto" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Round head</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedtravel" value="travel2" onclick="calculateTotal()" />1000X1000X280 (+$35000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://ksr-ugc.imgix.net/assets/011/606/500/e0bf794b0c88ae7f794a3a3805d355ee_original.JPG?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1463685264&auto=format&frame=1&q=92&s=80ca0357e2277b104e42626d88658a77" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Square head</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedtravel" value="travel3" onclick="calculateTotal()" />1000X3000X280 (+$70000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://cdn.drawception.com/images/panels/2016/10-1/Q7K3qpQcdr-4.png" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Hexagon head</div>
+                            </div>
+                        </div><br/>
+                        <!--
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedtravel" value="travel4" onclick="calculateTotal()" />Triangle ($750)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://images-na.ssl-images-amazon.com/images/I/51uZayohNYL._SX355_.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Triangle shape</div>
+                            </div>
+                        </div>
+                        -->
+                        <br/>
+
+                        <label><strong>Spindle</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedspindle" value="spindle1" checked onclick="calculateTotal()" />High-frequency automatic-tool-change(ATC) spindle, 2kw, 2µm runout, water-cooled, 18000 RPM (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.bellanaija.com/wp-content/uploads/2016/03/pear-body-shape.png" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Pear shape</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedspindle" value="spindle2" onclick="calculateTotal()" />High-frequency manual- tool-change spindle, 2.2kw, 12000 RPM (-$1500)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://shopyourshape.com/wp-content/uploads/2014/02/womanStraight.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Straight/Rectangle shape</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedspindle" value="spindle3" onclick="calculateTotal()" />Alfred-Jager HF ATC spindle, (Z80-K450.03 S5) (+$6000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://cdn.cliqueinc.com/cache/posts/img/uploads/current/images/0/241/84/main.original.700x0c.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Hourglass shape</div>
+                            </div>
+                        </div><br/>
+                        <!--
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedspindle" value="body4" onclick="calculateTotal()" />Triangle downward ($800)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.joyofclothes.com/g/style_advice/bodyshapes/inverted_triangle.png" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Triangle downward shape</div>
+                            </div>
+                        </div>
+                        -->
+                        <br/>
+
+                        <label><strong>Positioning Accuracy/300mm</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedpaccuracy" value="paccuracy1" checked onclick="calculateTotal()" />±15µm (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedpaccuracy" value="paccuracy2" onclick="calculateTotal()" />±50µm (-$1000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://imaginethatcomics.com/app/uploads/2018/07/Z-Scan-1-55.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Plastic-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedpaccuracy" value="paccuracy3" onclick="calculateTotal()" />±5µm (+$4000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.sideshowtoy.com/assets/products/902053-man-of-steel-superman/lg/902053-man-of-steel-superman-001.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Steel-made</div>
+                            </div>
+                        </div><br/>
+                        <!--
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedpaccuracy" value="paccuracy4" onclick="calculateTotal()" />Aluminum ($1500)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://cdn4.lostateminor.com/wp-content/uploads/2013/11/aluminum-6-830x623.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Aluminum-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedpaccuracy" value="paccuracy5" onclick="calculateTotal()" />Titanium ($5000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://vignette.wikia.nocookie.net/bioniclecrossovers/images/3/32/TitaniumMan01.jpg/revision/latest?cb=20100528215238" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Titanium-made</div>
+                            </div>
+                        </div>
+                        -->
+                        <br/>
+
+                        <label><strong>Machining Cooling/Lubrication System</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedcooling" value="cooling1" checked onclick="calculateTotal()" />Minimum-quantity-lubricant system (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedcooling" value="cooling2" onclick="calculateTotal()" />Standard misting system (-$1200)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://imaginethatcomics.com/app/uploads/2018/07/Z-Scan-1-55.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Plastic-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedcooling" value="cooling3" onclick="calculateTotal()" />Through shaft cooling (+$3000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.sideshowtoy.com/assets/products/902053-man-of-steel-superman/lg/902053-man-of-steel-superman-001.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Steel-made</div>
+                            </div>
+                        </div><br/>
+                        <br/>
+
+                        <label><strong>Mobile, Auto Machine Leveling</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedleveling" value="leveling1" checked onclick="calculateTotal()" />Standard caster wheel with leveling screw (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedleveling" value="leveling2" onclick="calculateTotal()" />Motorized caster wheel with leveling screw and auto-level feature (+$2000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://imaginethatcomics.com/app/uploads/2018/07/Z-Scan-1-55.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Plastic-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedleveling" value="leveling3" onclick="calculateTotal()" />Machine stand with leveling screw (-$300)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.sideshowtoy.com/assets/products/902053-man-of-steel-superman/lg/902053-man-of-steel-superman-001.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Steel-made</div>
+                            </div>
+                        </div><br/>
+                        <br/>
+
+                        <label><strong>Air Compressor</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedcompressor" value="compressor1" checked onclick="calculateTotal()" />None (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedcompressor" value="compressor2" onclick="calculateTotal()" />Standard Air comrpessor (+$1300)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://imaginethatcomics.com/app/uploads/2018/07/Z-Scan-1-55.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Plastic-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedcompressor" value="compressor3" onclick="calculateTotal()" />Scroll air compressor (+$2000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.sideshowtoy.com/assets/products/902053-man-of-steel-superman/lg/902053-man-of-steel-superman-001.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Steel-made</div>
+                            </div>
+                        </div><br/>
+                        <br/>
+
+                        <label><strong>Additional Axis</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedaxis" value="axis1" checked onclick="calculateTotal()" />None (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" name="selectedaxis" value="axis2" onclick="calculateTotal()" />Standard-precision A+B rotational table (+$2000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedaxis" value="axis3" onclick="calculateTotal()" />High-precision 4th axis rotational table(servo Harmonic drive reducer) (+$3500)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://imaginethatcomics.com/app/uploads/2018/07/Z-Scan-1-55.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Plastic-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedaxis" value="axis4" onclick="calculateTotal()" />High-precision A+B axis rotational table(Servo harmonic drive reducer) (+$8000)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.sideshowtoy.com/assets/products/902053-man-of-steel-superman/lg/902053-man-of-steel-superman-001.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Steel-made</div>
+                            </div>
+                        </div><br/>
+                        <br/>
+
+                        <label><strong>Probing</strong></label>
+                        <label class='radiolabel'><input type="radio" name="selectedprobing" value="probing1" checked onclick="calculateTotal()" />None (default)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" name="selectedprobing" value="probing2" onclick="calculateTotal()" />Standard-precision touch probe (+$500)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://c.shld.net/rpx/i/s/pi/mp/7019/prod_3546889702?src=https%3A%2F%2Fwww.vm-images.net%2Fsys%2Fresource.ashx%3Fguid%3D0ce6dc67ad5c43de94902788e8e0525b%26s%3D501&d=58927a7d356a7b848f32002bbc0f698eb3434739&?hei=64&wid=64&qlt=50" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Rubber-made BOB!!!</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedprobing" value="probing3" onclick="calculateTotal()" />High-precision photogrammetry measurement (+$1500)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://imaginethatcomics.com/app/uploads/2018/07/Z-Scan-1-55.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Plastic-made</div>
+                            </div>
+                        </div><br/>
+                        <label class='radiolabel'><input type="radio" id="defaultNo" name="selectedprobing" value="probing4" onclick="calculateTotal()" />High-precision reinshaw touch probe (+$2500)</label>
+                        <div class="dropdown">
+                            <span><strong>+</strong></span>
+                            <div class="dropdown-content">
+                              <img src="https://www.sideshowtoy.com/assets/products/902053-man-of-steel-superman/lg/902053-man-of-steel-superman-001.jpg" alt="Bumblebeast logo" width="300" height="200">
+                              <div class="desc">Steel-made</div>
+                            </div>
+                        </div><br/>
+                        <br/>
+
+                        <label><strong>Linear System Cooling</strong></label>
+                        <p>
+                            <label for='includelinearcooling' class="inlinelabel"><span style="font-weight: normal">Ballscrew nuts through cooling (+$3000)</span></label>
+                            <input type="checkbox" id="includelinearcooling" name='includelinearcooling' onclick="calculateTotal()">
+                        </p>
+                        <br/>
+
+                        <label><strong>Motion Downgrade</strong></label>
+                        <p>
+                            <label for='includemotiondowngrade' class="inlinelabel"><span style="font-weight: normal">Stepper motor (-$400)</span></label>
+                            <input type="checkbox" id="includemotiondowngrade" name='includemotiondowngrade' onclick="calculateTotal()">
+                        </p>
+                        <br/>
+                        
+
+                        <label><strong>Bumblebeast Warranty Program</strong></label>
+                        <select id="warranty" name='warranty' onchange="calculateTotal()">
+                        <option value="None">Select Warranty Program</option>
+                        <option value="1year">Warranty Parts & Phone Support -- 1 Year -- Included</option>
+                        <option value="2year">Extended Warranty Parts & Phone Support -- 2 Years -- (+$1000)</option>
+                        <option value="3year">Extended Warranty Parts & Phone Support -- 3 Years -- (+$1800)</option>
+                        <!--
+                        <option value="Mocha">Mocha($8)</option>
+                        <option value="Raspberry">Raspberry($10)</option>
+                        <option value="Pineapple">Pineapple($5)</option>
+                        <option value="Dobash">Dobash($9)</option>
+                        <option value="Mint">Mint($5)</option>
+                        <option value="Cherry">Cherry($5)</option>
+                        <option value="Apricot">Apricot($8)</option>
+                        <option value="Buttercream">Buttercream($7)</option>
+                        <option value="Chocolate Mousse">Chocolate Mousse($12)</option>
+                        -->
+                        </select>
+                        <br/>
+                        <br/>
+
+                        <p>
+                        <label for='includeinstall' class="inlinelabel">On-site Install & Training - Excludes Travel ($1500)</label>
+                        <input type="checkbox" id="includeinstall" name='includeinstall' onclick="calculateTotal()">
+                        </p>
+                        <br/>
+                   
+                        <!--
+                        <p>
+                        <label class="inlinelabel" for='includeinscription'>Include Inscription($20)</label>
+                        <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
+                        <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  />
+                        </p>
+                        -->
+
+                        
+                        <div id="basePrice" style="display: block" >
+                            Base Price: $20000
+                        </div>
+                        
+
+                        <div id="totalPrice"></div>
+                        
+                    
+                        </fieldset>
+                    </div>
+
+                    <input type='submit' id='submit' value='Finish your quote' onclick="calculateTotal()">
+
+                    <!-- create a modal -->
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="../img/hao.jpg" alt="Ta-da!!!" style="width:100%;max-width:50px">
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+
+                </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <!-- Footer Section-->
+            <footer class="" id="footer">
+                <div class="container">
+                    <div class="row text-center">
+                        <!-- Update Copyright -->
+                        <div class="footer-copyright pull-left">
+                            <a href="https://bumblebeast.co" target="_blank"> © 2018 FN-X Inc. </a>
+                        </div>
+                        <!-- Iubenda Privacy Policy -->
+                        <div class="footer-tos pull-right">
+                            <a href="https://www.iubenda.com/privacy-policy/24514671" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a> 
+                            <script type="text/javascript">(function (w,d) {
+                                var loader = function () {
+                                    var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; 
+                                    s.src="https://cdn.iubenda.com/iubenda.js"; 
+                                    tag.parentNode.insertBefore(s,tag);}; 
+                                    if(w.addEventListener){
+                                        w.addEventListener("load", loader, false);}
+                                    else if(w.attachEvent){
+                                        w.attachEvent("onload", loader);}
+                                    else{w.onload = loader;}})(window, document);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <!-- /Footer Section-->
+
+    <!-- Custom Script -->
+    <script src="../js/custom.js"></script> 
+    <script src="../js/drawer.js"></script> 
+    <script src="../js/fileupload.js"></script>
+    <!-- btn-submit authenticate with Google Sign-In -->
+    <script>
+        function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+        console.log(error);
+        }
+        function renderButton() {
+        gapi.signin2.render('my-signin2', {
+            'scope': 'profile email',
+            'width': 240,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,            
+            'onfailure': onFailure
+        });
+        }
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+            
+    <!-- Javascript for bootstrap theme -->
+    <script src="../js/bootstrap.min.js"></script>
+
+  </body>
+</html>
