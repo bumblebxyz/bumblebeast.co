@@ -147,6 +147,9 @@ body {
 .drawer .content ul.menu li.item.eighti:after {
   background-image: url(../img/svg/white/sharp-account_circle-24px.svg);
 }
+.drawer .content ul.menu li.item.ninei:after {
+  background-image: url(../img/svg/white/baseline-assessment-24px.svg);
+}
 
 .drawer .content ul.menu li.item:hover {
   background: rgba(0, 0, 0, 0.7);
